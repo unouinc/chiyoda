@@ -172,7 +172,7 @@
   .prep h1{font-size:32px;}
   .prep p{font-size:14px;color:var(--gray-4);margin-top:12px;}
 
-html,body{width:1920px;min-width:1920px;height:1080px;overflow:hidden;}
+html,body{width:1920px;min-width:0;} html{overflow-x:hidden;} body{overflow:hidden;}
 .sm{width:1920px;height:1080px;padding:64px 80px;position:relative;background:#fff;}
 .sm .ttl{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--ink);padding-bottom:20px;margin-bottom:40px;}
 .sm .ttl h1{font-size:30px;}.sm .ttl .meta{font-size:12px;color:var(--gray-4);letter-spacing:.08em;text-align:right;line-height:1.8;}
@@ -205,4 +205,20 @@ html,body{width:1920px;min-width:1920px;height:1080px;overflow:hidden;}
   </div>
   <div class="legend"><span><i class="d"></i>トップ</span><span><i class="k"></i>第1階層（ナビ）</span><span><i></i>第2階層・ページ内セクション</span><span><i class="c"></i>CMS管理</span><span><i class="e"></i>外部・別サイト</span></div>
   <div class="count">ページWF：トップ1／第1階層4／詳細テンプレート1／仮1<br>グローバルナビ：仕事を知る・人を知る・働く環境・募集要項＋エントリー（ボタン）</div>
-</div></body></html>
+</div>
+<script>
+(function(){
+  function fit(){
+    var el=document.querySelector('.sm')||document.querySelector('.nvwrap');
+    if(!el) return;
+    var w=1920, s=Math.min(1, window.innerWidth/w);
+    el.style.transformOrigin='top left';
+    el.style.transform='scale('+s+')';
+    document.body.style.height=(el.offsetHeight*s)+'px';
+    document.body.style.width=(w*s)+'px';
+    document.body.style.overflowX='hidden';
+  }
+  window.addEventListener('resize',fit); window.addEventListener('load',fit); fit();
+})();
+</script>
+</body></html>

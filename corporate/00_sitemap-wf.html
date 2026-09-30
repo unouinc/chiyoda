@@ -8,7 +8,7 @@
 /* UNOU WF base styles — 1440px fixed, achromatic, real-DOM (Figma import safe) */
 :root{--ink:#1a1a1a;--gray-1:#f5f5f5;--gray-2:#e4e4e4;--gray-3:#c9c9c9;--gray-4:#8a8a8a;--line:#d0d0d0;--dark:#3a3a3a;}
   *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{width:1920px;min-width:1920px;}
+  html,body{width:1920px;min-width:0;}
   body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased;}
   section{background:#fff;border-bottom:1px solid var(--line);width:1440px;position:relative;padding:72px 120px;}
   .eyebrow{font-size:12px;letter-spacing:.2em;color:var(--gray-4);text-transform:uppercase;margin-bottom:16px;font-weight:600;}
@@ -173,7 +173,7 @@
   .prep h1{font-size:32px;}
   .prep p{font-size:14px;color:var(--gray-4);margin-top:12px;}
 
-  html,body{height:1080px;overflow:hidden;}
+  html{overflow-x:hidden;} body{overflow:hidden;}
   .sm{width:1920px;height:1080px;padding:64px 80px;position:relative;background:#fff;}
   .sm .ttl{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--ink);padding-bottom:20px;margin-bottom:40px;}
   .sm .ttl h1{font-size:30px;}
@@ -220,5 +220,21 @@
   <div class="legend"><span><i class="d"></i>トップ</span><span><i class="k"></i>第1階層（グローバルナビ）</span><span><i></i>第2階層</span><span><i class="c"></i>CMS管理（社内更新）</span><span><i class="e"></i>外部サイト／別サイト</span></div>
   <div class="count">ページWF：トップ1／ハブ2／詳細9／仮4<br>グローバルナビ：企業情報・事業紹介・組織風土・ニュース・採用情報＋お問い合わせ（ボタン）</div>
 </div>
+
+<script>
+(function(){
+  function fit(){
+    var el=document.querySelector('.sm')||document.querySelector('.nvwrap');
+    if(!el) return;
+    var w=1920, s=Math.min(1, window.innerWidth/w);
+    el.style.transformOrigin='top left';
+    el.style.transform='scale('+s+')';
+    document.body.style.height=(el.offsetHeight*s)+'px';
+    document.body.style.width=(w*s)+'px';
+    document.body.style.overflowX='hidden';
+  }
+  window.addEventListener('resize',fit); window.addEventListener('load',fit); fit();
+})();
+</script>
 </body>
 </html>
