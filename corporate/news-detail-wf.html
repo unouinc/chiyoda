@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<title>ニュース詳細 — 千代田興業 WF</title>
+<style>
+/* UNOU WF base styles — 1440px fixed, achromatic, real-DOM (Figma import safe) */
+:root{--ink:#1a1a1a;--gray-1:#f5f5f5;--gray-2:#e4e4e4;--gray-3:#c9c9c9;--gray-4:#8a8a8a;--line:#d0d0d0;--dark:#3a3a3a;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{width:1440px;min-width:1440px;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased;}
+  section{background:#fff;border-bottom:1px solid var(--line);width:1440px;position:relative;padding:72px 120px;}
+  .eyebrow{font-size:12px;letter-spacing:.2em;color:var(--gray-4);text-transform:uppercase;margin-bottom:16px;font-weight:600;}
+  h1{font-size:38px;line-height:1.5;letter-spacing:.02em;font-weight:700;}
+  h2{font-size:26px;line-height:1.6;letter-spacing:.02em;font-weight:700;margin-bottom:16px;}
+  h3{font-size:18px;font-weight:700;line-height:1.5;}
+  p.body{font-size:15px;color:#333;}
+  .ph{background:var(--gray-1);border:1px dashed var(--gray-3);display:flex;align-items:center;justify-content:center;color:var(--gray-4);font-size:12px;letter-spacing:.1em;}
+  .hd{width:1440px;background:#fff;border-bottom:1px solid var(--line);height:80px;display:flex;align-items:center;padding:0 40px;}
+  .hd .logo{display:flex;align-items:center;gap:10px;margin-right:auto;}
+  .hd .wm{font-size:14px;font-weight:700;letter-spacing:.12em;line-height:1.1;}
+  .hd .wm small{display:block;font-size:8px;font-weight:600;letter-spacing:.18em;color:var(--gray-4);}
+  .hd nav{display:flex;gap:34px;margin-right:32px;}
+  .hd nav a{font-size:13.5px;font-weight:600;letter-spacing:.04em;}
+  .hd nav a.on{border-bottom:2px solid var(--ink);padding-bottom:4px;}
+  .hd .btn{background:var(--dark);color:#fff;font-size:13px;font-weight:600;height:40px;padding:0 24px;display:flex;align-items:center;border-radius:3px;}
+  .crumb{font-size:11px;color:var(--gray-4);letter-spacing:.06em;margin-bottom:24px;}
+  .hero{padding:56px 120px 64px;background:var(--gray-1);}
+  .hero .lead{font-size:16px;color:#333;margin-top:20px;line-height:2;max-width:720px;}
+  .subnav{display:flex;gap:0;margin-top:36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .subnav a{font-size:13px;font-weight:600;letter-spacing:.04em;padding:14px 28px 14px 0;color:var(--gray-4);}
+  .subnav a.on{color:var(--ink);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .card{border:1px solid var(--line);background:#fff;position:relative;}
+  .card .c-img{height:200px;border:none;border-bottom:1px dashed var(--gray-3);}
+  .card .c-body{padding:22px 24px 26px;}
+  .card .c-en{font-size:11px;letter-spacing:.14em;color:var(--gray-4);font-weight:600;}
+  .card h3{margin:4px 0 8px;}
+  .card p{font-size:13px;color:#444;line-height:1.8;}
+  .cir{position:absolute;right:20px;bottom:20px;width:36px;height:36px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;}
+  .facts{display:flex;gap:20px;}
+  .fact{flex:1;border:1px solid var(--line);padding:28px 24px;text-align:center;}
+  .fact b{font-size:36px;font-weight:700;}
+  .fact b small{font-size:14px;margin-left:2px;}
+  .fact span{display:block;font-size:11px;color:var(--gray-4);letter-spacing:.06em;margin-top:4px;}
+  .msg-grid{display:grid;grid-template-columns:440px 1fr;gap:72px;align-items:start;}
+  .msg-img{height:560px;}
+  .msg-title{font-size:30px;font-weight:700;line-height:1.6;margin-bottom:28px;}
+  .msg-body p{font-size:15px;color:#333;line-height:2.1;margin-bottom:22px;}
+  .sign{margin-top:36px;display:flex;align-items:center;gap:16px;}
+  .sign .s-img{width:160px;height:48px;}
+  .sign span{font-size:13px;color:#444;line-height:1.5;}
+  .mvv{border-top:1px solid var(--ink);padding:44px 0;display:grid;grid-template-columns:260px 1fr;gap:48px;}
+  .mvv:last-child{border-bottom:1px solid var(--ink);}
+  .mvv .m-en{font-size:34px;font-weight:700;letter-spacing:.04em;line-height:1.2;}
+  .mvv .m-jp{font-size:12px;color:var(--gray-4);letter-spacing:.12em;margin-top:6px;}
+  .mvv .m-st{font-size:24px;font-weight:700;line-height:1.7;margin-bottom:14px;}
+  .mvv .m-body{font-size:14.5px;color:#333;line-height:2;max-width:720px;}
+  .vals{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:8px;}
+  .val{border:1px solid var(--line);padding:24px 26px;}
+  .val b{display:block;font-size:17px;font-weight:700;margin-bottom:6px;}
+  .val p{font-size:13px;color:#444;line-height:1.8;}
+  .tl{position:relative;margin-top:40px;padding-left:200px;}
+  .tl .line{position:absolute;left:160px;top:0;bottom:0;width:1px;background:var(--ink);}
+  .ev{position:relative;display:grid;grid-template-columns:1fr 360px;gap:40px;padding-bottom:56px;}
+  .ev .yr{position:absolute;left:-200px;top:0;width:120px;text-align:right;font-size:22px;font-weight:700;letter-spacing:.04em;}
+  .ev .dot{position:absolute;left:-46px;top:12px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--ink);}
+  .ev h3{margin-bottom:8px;}
+  .ev p{font-size:14px;color:#444;line-height:1.9;}
+  .ev .e-img{height:220px;}
+  .chap{font-size:12px;letter-spacing:.16em;color:var(--gray-4);font-weight:600;margin:8px 0 28px -40px;}
+  .profile{width:100%;border-collapse:collapse;}
+  .profile th,.profile td{border-bottom:1px solid var(--line);padding:18px 12px;text-align:left;font-size:14px;vertical-align:top;}
+  .profile th{width:220px;color:var(--gray-4);font-weight:600;letter-spacing:.04em;}
+  .profile tr:first-child th,.profile tr:first-child td{border-top:1px solid var(--ink);}
+  .map{height:400px;margin-top:28px;}
+  .join{background:var(--gray-1);}
+  .join-in{display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;}
+  .join-btn{border:1px solid var(--ink);padding:16px 48px;font-size:14px;letter-spacing:.12em;font-weight:600;white-space:nowrap;background:#fff;}
+  .other{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px;}
+  .oth{position:relative;height:140px;background:var(--gray-3);border:1px dashed var(--gray-4);display:flex;align-items:center;padding:0 28px;}
+  .oth .shade{position:absolute;inset:0;background:rgba(30,30,30,.45);}
+  .oth .inner{position:relative;color:#fff;}
+  .oth .en{font-size:12px;letter-spacing:.14em;}
+  .oth .jp{font-size:17px;font-weight:700;margin-top:2px;}
+  .oth .cirw{position:absolute;right:22px;top:50%;transform:translateY(-50%);width:36px;height:36px;border:1.5px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+  .ft{width:1440px;background:var(--dark);color:#fff;padding:56px 120px 40px;}
+  .ft .nav{display:flex;gap:32px;margin-bottom:32px;}
+  .ft .nav a{font-size:13px;font-weight:600;letter-spacing:.04em;}
+  a{color:inherit;text-decoration:none;}
+  a.blk{display:block;}
+  .ft .copy{font-size:11px;color:#bbb;letter-spacing:.04em;}
+  a{color:inherit;text-decoration:none;}
+  a.blk{display:block;}
+
+  .kv{width:1440px;height:720px;background:var(--gray-3);border-bottom:1px solid var(--line);position:relative;display:flex;align-items:center;padding:0 120px;}
+  .kv .dark{position:absolute;left:0;top:0;bottom:0;width:55%;background:rgba(20,20,20,.55);}
+  .kv .phl{position:absolute;right:40px;bottom:32px;color:#fff;font-size:12px;letter-spacing:.14em;}
+  .kv .copy{position:relative;color:#fff;max-width:760px;}
+  .kv h1{font-size:52px;line-height:1.45;color:#fff;}
+  .kv .lead{font-size:16px;line-height:2;margin-top:24px;color:#eee;}
+  .kv .scroll{position:absolute;left:120px;bottom:32px;color:#fff;font-size:11px;letter-spacing:.2em;}
+  .btnline{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--ink);padding:14px 32px;font-size:13px;font-weight:600;letter-spacing:.1em;background:#fff;margin-top:8px;}
+  .btnline.w{border-color:#fff;color:#fff;background:transparent;}
+  .sechead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px;}
+  .sechead .en{font-size:44px;font-weight:700;letter-spacing:.02em;line-height:1.1;}
+  .sechead .jp{font-size:13px;color:var(--gray-4);margin-top:8px;letter-spacing:.1em;}
+  .lead2{font-size:15px;line-height:2;color:#333;max-width:760px;}
+  .newslist{border-top:1px solid var(--ink);}
+  .newslist a{display:grid;grid-template-columns:120px 100px 1fr 40px;align-items:center;gap:24px;padding:20px 8px;border-bottom:1px solid var(--line);font-size:14px;}
+  .newslist .d{font-size:12px;color:var(--gray-4);letter-spacing:.06em;}
+  .chip{display:inline-block;background:var(--gray-2);font-size:10px;letter-spacing:.08em;padding:3px 10px;text-align:center;}
+  .mvvband{background:var(--dark);color:#fff;}
+  .mvvband .eyebrow{color:#aaa;}
+  .mvvband .m{font-size:36px;font-weight:700;line-height:1.6;margin:8px 0 12px;}
+  .mvvband .v{font-size:26px;font-weight:700;line-height:1.6;margin:8px 0 12px;}
+  .mvvband .n{font-size:12px;color:#bbb;letter-spacing:.06em;}
+  .mvvband .btnline{border-color:#fff;color:#fff;background:transparent;}
+  .bento{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:330px 330px;gap:20px;}
+  .bento .card:first-child{grid-row:1/3;}
+  .bento .card .c-img{height:170px;}
+  .bento .card p{padding-right:44px;}
+  .bento .card:first-child .c-img{height:440px;}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);}
+  .step{padding:28px 24px;border-right:1px solid var(--line);}
+  .step:last-child{border-right:none;}
+  .step .no{font-size:12px;letter-spacing:.14em;color:var(--gray-4);font-weight:600;}
+  .step b{display:block;font-size:17px;margin:6px 0 8px;}
+  .step p{font-size:13px;color:#444;line-height:1.8;}
+  .flow{display:flex;align-items:center;gap:0;margin-top:24px;}
+  .flow .box{flex:1;border:1.5px solid var(--ink);padding:18px 16px;text-align:center;font-size:14px;font-weight:700;}
+  .flow .box small{display:block;font-size:11px;color:var(--gray-4);font-weight:400;margin-top:4px;}
+  .flow .arr{width:40px;display:flex;justify-content:center;}
+  .spec{width:100%;border-collapse:collapse;margin-top:24px;}
+  .spec th,.spec td{border-bottom:1px solid var(--line);padding:14px 12px;font-size:14px;text-align:left;vertical-align:top;}
+  .spec th{width:200px;color:var(--gray-4);font-weight:600;}
+  .spec tr:first-child th,.spec tr:first-child td{border-top:1px solid var(--ink);}
+  .clients{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+  .clients .ph{height:80px;}
+  .form{max-width:760px;}
+  .form .row{margin-bottom:22px;}
+  .form label{display:block;font-size:13px;font-weight:600;margin-bottom:8px;}
+  .form label small{font-size:10px;color:#fff;background:var(--dark);padding:2px 6px;margin-left:8px;letter-spacing:.08em;}
+  .form .in{border:1px solid var(--gray-3);height:44px;background:#fff;}
+  .form .ta{border:1px solid var(--gray-3);height:160px;background:#fff;}
+  .form .sel{border:1px solid var(--gray-3);height:44px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px;font-size:13px;color:var(--gray-4);}
+  .form .chk{display:flex;gap:10px;align-items:center;font-size:13px;}
+  .form .chk i{width:16px;height:16px;border:1px solid var(--ink);display:inline-block;}
+  .submit{background:var(--dark);color:#fff;font-size:14px;font-weight:600;letter-spacing:.12em;padding:18px 0;width:320px;text-align:center;border-radius:3px;margin-top:8px;}
+  .ft .cols{display:grid;grid-template-columns:260px repeat(4,1fr);gap:32px;margin-bottom:40px;}
+  .ft .cols b{display:block;font-size:13px;font-weight:700;margin-bottom:12px;letter-spacing:.06em;}
+  .ft .cols a{display:block;font-size:12px;color:#ccc;line-height:2.2;}
+  .ft .cols .co{font-size:12px;color:#ccc;line-height:1.9;}
+  .ft .bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #555;padding-top:20px;}
+  .ft .bottom .links a{font-size:11px;color:#bbb;margin-right:20px;}
+  .article{max-width:800px;}
+  .article h2{font-size:22px;margin:40px 0 12px;}
+  .article p{font-size:15px;line-height:2;color:#333;margin-bottom:20px;}
+  .article .ph{height:400px;margin:24px 0;}
+  .pager{display:flex;justify-content:space-between;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:18px 0;margin-top:48px;font-size:13px;font-weight:600;}
+  .tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:32px;}
+  .tabs a{padding:12px 24px;font-size:13px;font-weight:600;color:var(--gray-4);}
+  .tabs a.on{color:var(--ink);border-bottom:2px solid var(--ink);}
+  .cta2{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .cta2 .box{border:1px solid var(--ink);padding:40px 36px;background:#fff;position:relative;}
+  .cta2 .box h3{font-size:22px;margin:6px 0 10px;}
+  .cta2 .box p{font-size:13px;color:#444;line-height:1.8;max-width:420px;}
+  .cta2 .box .btnline{margin-top:20px;}
+  .prep{min-height:480px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+  .prep h1{font-size:32px;}
+  .prep p{font-size:14px;color:var(--gray-4);margin-top:12px;}
+
+</style>
+</head>
+<body>
+<div class="hd">
+  <a class="logo" href="index-wf.html"><img src="../assets/logo.png" alt="千代田興業株式会社" style="height:44px;width:auto;display:block;"></a>
+  <nav><a href="company-wf.html">企業情報</a><a href="business-wf.html">事業紹介</a><a href="culture-wf.html">組織風土</a><a href="news-wf.html" class="on">ニュース</a><a href="recruit-wf.html">採用情報</a></nav>
+  <a class="btn" href="contact-wf.html">お問い合わせ</a>
+</div>
+<section class="hero">
+  <p class="crumb">TOP &nbsp;/&nbsp; <a href="news-wf.html">ニュース</a> &nbsp;/&nbsp; 記事タイトル</p>
+  <h1>ニュースタイトルが入ります（ダミー・記事タイトル）</h1>
+  <p class="lead"><span class="chip">お知らせ</span>&nbsp;&nbsp;<span style="font-size:12px;color:var(--gray-4);">2026.◯◯.◯◯</span></p>
+  
+</section>
+
+<section>
+  <div class="article">
+    <div class="ph">PHOTO（メイン画像・任意）</div>
+    <p>本文が入ります。CMS（WordPress）で更新するため、見出し・本文・画像を自由に配置できる構成にします。（ダミー・3〜4行）</p>
+    <h2>見出し（h2）が入ります</h2>
+    <p>本文が入ります（ダミー・3〜4行）。</p>
+    <p>本文が入ります（ダミー・3〜4行）。</p>
+    <div class="pager"><a href="news-wf.html">‹ 前の記事</a><a href="news-wf.html">一覧へ戻る</a><a href="news-wf.html">次の記事 ›</a></div>
+  </div>
+</section>
+<section>
+  <p class="eyebrow">Related</p>
+  <h2>関連ニュース</h2>
+  <div class="newslist"><a href="news-detail-wf.html"><span class="d">2026.◯◯.◯◯</span><span class="chip">お知らせ</span><span>ニュースタイトルが入ります（ダミー・1〜2行程度のテキスト）</span><span class="cir" style="position:static;"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h9M7 3l4 4-4 4" fill="none" stroke="#1a1a1a" stroke-width="1.5"/></svg></span></a><a href="news-detail-wf.html"><span class="d">2026.◯◯.◯◯</span><span class="chip">採用</span><span>ニュースタイトルが入ります（ダミー・1〜2行程度のテキスト）</span><span class="cir" style="position:static;"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h9M7 3l4 4-4 4" fill="none" stroke="#1a1a1a" stroke-width="1.5"/></svg></span></a><a href="news-detail-wf.html"><span class="d">2026.◯◯.◯◯</span><span class="chip">お知らせ</span><span>ニュースタイトルが入ります（ダミー・1〜2行程度のテキスト）</span><span class="cir" style="position:static;"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h9M7 3l4 4-4 4" fill="none" stroke="#1a1a1a" stroke-width="1.5"/></svg></span></a></div>
+</section>
+<section class="join">
+  <div class="join-in"><div><p class="eyebrow">Contact</p><h2>構内物流・環境整備・運送のご相談は、<br>お気軽にご連絡ください。</h2><p class="body" style="margin-top:8px;">TEL 044-244-4101（平日 ◯:00〜◯:00）</p></div><a class="join-btn" href="contact-wf.html">お問い合わせ</a></div>
+</section>
+<div class="ft">
+  <div class="cols">
+    <div>
+      <img src="../assets/logo.png" alt="千代田興業株式会社" style="height:40px;width:auto;display:block;">
+      <div class="co" style="margin-top:14px;"><b style="margin-bottom:4px;">千代田興業株式会社</b>〒210-0013<br>神奈川県川崎市川崎区新川通10-8<br>TEL 044-244-4101</div>
+    </div>
+    <div><b><a href="company-wf.html" style="color:#fff;font-size:13px;">企業情報</a></b><a href="message-wf.html">代表メッセージ</a><a href="mvv-wf.html">ミッション・ビジョン・バリュー</a><a href="profile-wf.html">会社概要・拠点情報</a><a href="history-wf.html">沿革</a></div>
+    <div><b><a href="business-wf.html" style="color:#fff;font-size:13px;">事業紹介</a></b><a href="biz-logistics-wf.html">構内物流事業</a><a href="biz-environment-wf.html">環境整備事業</a><a href="biz-bulk-wf.html">バルク運送事業</a><a href="biz-waste-wf.html">産業廃棄物収集事業</a><a href="biz-parking-wf.html">パーキング事業</a></div>
+    <div><b>取り組み</b><a href="culture-wf.html">組織風土</a><a href="safety-wf.html">安全・品質への取り組み</a><a href="news-wf.html">ニュース</a></div>
+    <div><b>採用・お問い合わせ</b><a href="recruit-wf.html">採用情報（採用サイトへ）</a><a href="contact-wf.html">お問い合わせ</a></div>
+  </div>
+  <div class="bottom">
+    <div class="links"><a href="privacy-wf.html">プライバシーポリシー</a><a href="sitemap-page-wf.html">サイトマップ</a></div>
+    <p class="copy">©2026 CHIYODA KOGYO CO., LTD.</p>
+  </div>
+</div>
+
+</body>
+</html>
