@@ -102,10 +102,13 @@
 
   .kv{width:1440px;height:720px;background:var(--gray-3);border-bottom:1px solid var(--line);position:relative;display:flex;align-items:center;padding:0 120px;}
   .kv .dark{position:absolute;left:0;top:0;bottom:0;width:55%;background:rgba(20,20,20,.55);}
-  .kv .phl{position:absolute;right:40px;bottom:32px;color:#fff;font-size:12px;letter-spacing:.14em;}
-  .kv .copy{position:relative;color:#fff;max-width:900px;}
-  .kv h1{font-size:64px;line-height:1.3;letter-spacing:.01em;color:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;}
-  .kv .lead{font-size:20px;line-height:1.8;margin-top:44px;color:#e6e6e6;letter-spacing:.04em;}
+  .kv .phl{position:absolute;left:55%;width:45%;bottom:32px;text-align:center;color:#fff;font-size:12px;letter-spacing:.14em;}
+  .kv .copy{position:absolute;left:96px;top:283px;width:640px;color:#fff;}
+  .kv h1{margin:0;font-size:120px;line-height:1;letter-spacing:.02em;color:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;}
+  .kv h1 .k1,.kv h1 .k2{display:block;}
+  .kv h1 .k2{text-align:right;}
+  .kv h1 .lead{display:flex;align-items:center;margin:6px 0 4px 23px;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;font-size:20px;font-weight:400;line-height:1.8;color:#e6e6e6;letter-spacing:.04em;white-space:nowrap;}
+  .kv h1 .lead i{display:block;flex:0 0 125px;height:1px;background:#e6e6e6;margin:0 53px 0 40px;}
   .kv .scroll{position:absolute;left:120px;bottom:32px;color:#fff;font-size:11px;letter-spacing:.2em;}
   .btnline{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--ink);padding:14px 32px;font-size:13px;font-weight:600;letter-spacing:.1em;background:#fff;margin-top:8px;}
   .btnline.w{border-color:#fff;color:#fff;background:transparent;}
@@ -189,8 +192,7 @@
 <div class="kv">
   <div class="dark"></div>
   <div class="copy">
-    <h1>Keep Driving.<br>Deep Skill.</h1>
-    <p class="lead">85年つないできた技術を、次の100年へ。</p>
+    <h1><span class="k1">KEEP</span><span class="lead"><span>85年つないできた技術を</span><i></i><span>次の100年へ。</span></span><span class="k2">DRIVING</span></h1>
   </div>
   <span class="scroll">SCROLL</span>
   <span class="phl">VIDEO / PHOTO（左：歴史＝現場・ベテラン ／ 右：新化＝若手）を切替 or 2分割</span>
