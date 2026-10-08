@@ -194,7 +194,7 @@ ul.plain li strong{font-weight:700;}
 .agenda .r span{color:var(--sec);}
 /* concept map */
 .cmap{margin-top:24px;display:grid;grid-template-columns:1fr;gap:12px;}
-.cmap .top{border:1px solid var(--line);background:var(--card);padding:16px 22px;display:grid;grid-template-columns:200px 1fr;align-items:center;}
+.cmap .top{border:1px solid var(--line);background:var(--card);padding:16px 22px;display:grid;grid-template-columns:400px 1fr;align-items:center;}
 .cmap .lbl{font-size:11px;color:var(--gray);letter-spacing:.12em;}
 .cmap .top b{font-size:26px;font-weight:700;letter-spacing:.12em;}
 .cmap .top p{font-size:13px;color:var(--sec);line-height:1.8;}
@@ -206,7 +206,13 @@ ul.plain li strong{font-weight:700;}
 .down{display:flex;justify-content:center;}
 /* design concept */
 .dc{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 84px;}
-.dc .big{font-size:58px;font-weight:700;letter-spacing:.1em;line-height:1.5;color:#fff;}
+.dc .big{font-size:72px;font-weight:700;letter-spacing:.1em;line-height:1.5;color:#fff;}
+.dc .tri3{display:flex;align-items:baseline;gap:34px;}
+.dc .tri3 i{font-style:normal;font-size:40px;color:#9aa3ad;font-weight:400;}
+.dc3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px;max-width:900px;}
+.dc3 div{border-top:1px solid #56667a;padding-top:14px;}
+.dc3 b{display:block;font-size:20px;color:#fff;letter-spacing:.1em;margin-bottom:6px;}
+.dc3 p{font-size:15px;color:#c9d3df;letter-spacing:.08em;}
 .dc .sub{font-size:20px;color:#c9d3df;letter-spacing:.12em;margin-top:28px;line-height:1.9;}
 /* matrix */
 .mx{margin-top:24px;border-collapse:collapse;width:100%;font-size:12.5px;line-height:1.75;}
@@ -228,7 +234,7 @@ ul.plain li strong{font-weight:700;}
 .mb .card img{display:block;width:100%;height:178px;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);}
 .mb .card .bd{padding:12px 14px;}
 .mb .card .t{font-size:13.5px;font-weight:700;margin-bottom:2px;}
-.mb .card .u{font-family:Inter,sans-serif;font-size:9.5px;color:var(--gray);margin-bottom:8px;word-break:break-all;}
+.mb .card .u{display:block;text-decoration:underline;text-underline-offset:2px;font-family:Inter,sans-serif;font-size:9.5px;color:var(--gray);margin-bottom:8px;word-break:break-all;}
 .mb .card .g,.mb .card .b{font-size:11px;line-height:1.65;padding-left:16px;position:relative;margin-bottom:3px;}
 .mb .card .g::before{content:"○";position:absolute;left:0;color:var(--navy2);}
 .mb .card .b::before{content:"×";position:absolute;left:0;color:var(--gray);}
@@ -260,7 +266,7 @@ ul.plain li strong{font-weight:700;}
   <p class="lead">会社の考え方（MVV）から出発し、サイトのコンセプト、見た目の方向性、構成の順にご説明します。</p>
   <div class="agenda">
     <div class="r"><div class="n">01</div><b>MVV</b><span>会社の存在意義と目指す姿。サイト全体の土台になる考え方</span></div>
-    <div class="r"><div class="n">02</div><b>サイトのコンセプト</b><span>「歴史 × 新化」と、KEEP DRIVING・つなぐ・継続発信の2企画</span></div>
+    <div class="r"><div class="n">02</div><b>サイトのコンセプト</b><span>「85年の軌跡を、次世代につなぐ。」と、KEEP DRIVING・つなぐ・継続発信の2企画</span></div>
     <div class="r"><div class="n">03</div><b>デザインコンセプト</b><span>コンセプトを、見た目でどう表現するか</span></div>
     <div class="r"><div class="n">04</div><b>サイトのトンマナ</b><span>目指すトーンの位置と、色・書体・写真・レイアウトの指針</span></div>
     <div class="r"><div class="n">05</div><b>ムードボード</b><span>参考サイト4件と、取り入れたい点・避けたい点</span></div>
@@ -305,14 +311,14 @@ ul.plain li strong{font-weight:700;}
 <div class="slide">
   <div class="no">02<span>サイトのコンセプト</span></div>
   <h2>サイトコンセプトの全体像</h2>
-  <p class="lead">広報コンセプト「歴史 × 新化」を軸に、タグライン・核の言葉・継続発信の3つでサイト全体を組み立てます。</p>
+  <p class="lead">広報コンセプト「85年の軌跡を、次世代につなぐ。」を軸に、タグライン・核の言葉・継続発信の3つでサイト全体を組み立てます。</p>
   <div class="cmap">
-    <div class="top"><div><div class="lbl">広報コンセプト</div><b>歴史 × 新化</b></div><p>85年の歴史を土台に、いま始まっている新しい取り組みを発信する。歴史は信頼の根拠、新化は選ばれる理由。</p></div>
+    <div class="top"><div><div class="lbl">広報コンセプト</div><b style="font-size:22px;letter-spacing:.08em;">85年の軌跡を、次世代につなぐ。</b></div><p>85年積み重ねてきた技術と信頼を土台に、次世代への引き継ぎ・若手の採用など、いま始まっている取り組みを発信する。</p></div>
     <div class="down"><svg width="16" height="22" viewBox="0 0 16 22"><line x1="8.0" y1="0" x2="8.0" y2="14" stroke="#1E3A5F" stroke-width="1.5"/><polygon points="2.0,12 14.0,12 8.0,22" fill="#1E3A5F"/></svg></div>
     <div class="row3">
       <div class="c"><div class="lbl">タグライン（KV）</div><div class="v">KEEP DRIVING</div><p>止めずに続けてきた85年と、次の100年へ走り続ける姿勢を、2語で言い切る。</p><div class="where">トップページKV／サブコピー「85年つないできた技術を、次の100年へ。」</div></div>
       <div class="c"><div class="lbl">核の言葉</div><div class="v">つなぐ</div><p>モノ（事業）・期待（信頼）・人（継承）を、ひとつの動詞で束ねる。</p><div class="where">About Us「鉄も、食も、人々も。先人の技術と想いを、次の世代へ。」</div></div>
-      <div class="c"><div class="lbl">継続発信</div><div class="v" style="font-size:20px;">ROAD TO 100th<br>CHIYODA WAY</div><p>新化（新しい取り組み）と歴史（技術者）を、公開後も発信し続ける2つの企画。</p><div class="where">ニュース／組織風土・採用サイト</div></div>
+      <div class="c"><div class="lbl">継続発信</div><div class="v" style="font-size:20px;">ROAD TO 100th<br>CHIYODA WAY</div><p>次世代への取り組みと、85年の技術を支える人を、公開後も発信し続ける2つの企画。</p><div class="where">ニュース／組織風土・採用サイト</div></div>
     </div>
   </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>06</b></div>
@@ -321,12 +327,12 @@ ul.plain li strong{font-weight:700;}
 <div class="slide">
   <div class="no">02<span>サイトのコンセプト</span></div>
   <h2>広報・PRのコンセプト</h2>
-  <p class="lead">85年の歴史を土台に、いま始まっている新しい取り組みを発信する。この2つの掛け合わせを、社外への見せ方の軸にします。</p>
+  <p class="lead">85年積み重ねてきた技術と信頼を土台に、いま始まっている次世代への取り組みを発信する。この一文を、社外への見せ方の軸にします。</p>
   <div class="prc">
-    <div class="formula"><b>歴史</b><i>×</i><b>新化</b></div>
+    <div class="formula"><b style="font-size:46px;letter-spacing:.1em;">85年の軌跡を、次世代につなぐ。</b></div>
     <div class="imgs">
-      <div class="ph">PHOTO<small>歴史｜製鉄所構内・創業からの現場</small></div>
-      <div class="ph">PHOTO<small>新化｜若手・新しい取り組み</small></div>
+      <div class="ph">PHOTO<small>85年の軌跡｜製鉄所構内・創業からの現場</small></div>
+      <div class="ph">PHOTO<small>次世代につなぐ｜若手・新しい取り組み</small></div>
     </div>
   </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>07</b></div>
@@ -334,8 +340,8 @@ ul.plain li strong{font-weight:700;}
 
 <div class="slide">
   <div class="no">02<span>サイトのコンセプト</span></div>
-  <h2>「新化」について</h2>
-  <p class="lead">新化とは、これから始めることではなく、すでに経営層が始めている取り組みのことです。</p>
+  <h2>「次世代につなぐ」について</h2>
+  <p class="lead">「次世代につなぐ」とは、これから始めることではなく、すでに経営層が始めている取り組みのことです。</p>
   <div class="newv">
     <div class="now">
       <div class="lbl">いま、始まっていること</div>
@@ -344,7 +350,7 @@ ul.plain li strong{font-weight:700;}
     <div class="st">千代田興業が100年以上続く会社になるために、<br>若手の採用に力を入れていく。</div>
     <p>そのためには、過去に固執せず、新しい取り組みをしている会社であると認識されることが、<b>商品市場・労働市場の両方</b>で大切になります。</p>
   </div>
-  <div class="concl"><b>整理：</b>「歴史」は信頼の根拠、「新化」は選ばれる理由。歴史だけでは古い会社に見え、新化だけでは根拠がない。両方を並べて発信することで、顧客にも求職者にも伝わります。</div>
+  <div class="concl"><b>整理：</b>「85年の軌跡」は信頼の根拠、「次世代につなぐ」取り組みは選ばれる理由。軌跡だけでは古い会社に見え、新しい取り組みだけでは根拠がない。両方を並べて発信することで、顧客にも求職者にも伝わります。</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>08</b></div>
 </div>
 
@@ -360,11 +366,11 @@ ul.plain li strong{font-weight:700;}
 <div class="slide">
   <div class="no">02<span>サイトのコンセプト</span></div>
   <h2>KV タグラインの設計背景</h2>
-  <p class="lead">「歴史 × 新化」を、2語で言い切る。Keep が歴史（続けること）、Driving が現場を動かし続け、次へ進む姿勢。英語にしたのは、新しさを若手に届けるためです。</p>
+  <p class="lead">「85年の軌跡を、次世代につなぐ。」を、2語で言い切る。Keep が85年の軌跡（続けること）、Driving が現場を動かし続け、次へ進む姿勢。英語にしたのは、新しさを若手に届けるためです。</p>
   <div class="why">
     <div class="w"><div class="k">Keep<small>続けることは、難しく、すごいこと</small></div><p>85年、同じ構内で頼まれ続けてきた。派手さはなくても、止めずに続けてきたこと自体が、千代田興業の最大の実績です。Keep は、その積み重ねを受け継ぎ、これからも続けていく意志を表します。</p></div>
     <div class="w"><div class="k">Driving<small>現場を動かし、次へ進む</small></div><p>製鉄所構内で車両を走らせ、操業を止めずに動かし続ける。Driving には「走る」「動かす」「前へ進める」の意味が重なり、日々の現場の姿と、次の100年へ向かう姿勢を一語で伝えます。</p></div>
-    <div class="w wide"><div class="k" style="font-size:18px;">なぜ英語か<small>新しさを、若手に届けるため</small></div><p>日本語で「走り続ける」と書くと、堅実だが古い会社に見えやすい。英語の短い言葉にすることで、同じ意味を「新化」のトーンで届けられます。日本語のサブコピー「85年つないできた技術を、次の100年へ。」が意味を補い、英語が読めなくても伝わる構成です。2語だけの短い言葉なので、口に出して覚えやすく、ロゴのように扱えることも意識しています。</p></div>
+    <div class="w wide"><div class="k" style="font-size:18px;">なぜ英語か<small>新しさを、若手に届けるため</small></div><p>日本語で「走り続ける」と書くと、堅実だが古い会社に見えやすい。英語の短い言葉にすることで、同じ意味を新しさのあるトーンで届けられます。日本語のサブコピー「85年つないできた技術を、次の100年へ。」が意味を補い、英語が読めなくても伝わる構成です。2語だけの短い言葉なので、口に出して覚えやすく、ロゴのように扱えることも意識しています。</p></div>
   </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>10</b></div>
 </div>
@@ -405,7 +411,7 @@ ul.plain li strong{font-weight:700;}
       <div class="ab">PLAN A</div>
       <h3>ROAD TO 100th</h3>
       <div class="alt">創業100年へ向かう歩みを伝えるニュース</div>
-      <div class="what">新しい従業員の採用、新しい組織施策の実施、イベントの実施など、会社の「新化」にあたるNewsを継続的に発信する。100年目に向かう歩みとして時系列に積み上がる。</div>
+      <div class="what">新しい従業員の採用、新しい組織施策の実施、イベントの実施など、次世代へつなぐ取り組みのNewsを継続的に発信する。100年目に向かう歩みとして時系列に積み上がる。</div>
       <div class="ex"><span class="chip">新入社員の入社</span><span class="chip">新制度・新体制の発足</span><span class="chip">社内イベント</span><span class="chip">新車両・設備の導入</span></div>
     </div>
     <div class="plan">
@@ -416,7 +422,7 @@ ul.plain li strong{font-weight:700;}
       <div class="ex"><span class="chip">熟練者のこだわり</span><span class="chip">1日の過ごし方</span><span class="chip">仕事の流儀</span><span class="chip">若手へのメッセージ</span></div>
     </div>
   </div>
-  <div class="concl"><b>役割分担：</b>Aが「新化」を、Bが「歴史（技術）」を担う。2本を並走させることで、広報コンセプト「歴史 × 新化」をそのまま更新し続けられます。</div>
+  <div class="concl"><b>役割分担：</b>Aが「次世代につなぐ」取り組みを、Bが「85年の軌跡（技術）」を担う。2本を並走させることで、広報コンセプト「85年の軌跡を、次世代につなぐ。」をそのまま更新し続けられます。</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>13</b></div>
 </div>
 
@@ -424,23 +430,27 @@ ul.plain li strong{font-weight:700;}
   <div class="no">03<span>デザインコンセプト</span></div>
   <h2>デザインコンセプト</h2>
   <div class="dc">
-    <div class="big">人と技術を、<br>まっすぐ見せる。</div>
-    <div class="sub">飾らない。整える。大きく見せる。</div>
+    <div class="big tri3"><span>技術</span><i>×</i><span>仲間</span><i>×</i><span>進化</span></div>
+    <div class="dc3">
+      <div><b>技術</b><p>歴史・誠実・責任</p></div>
+      <div><b>仲間</b><p>人・風土の良さ</p></div>
+      <div><b>進化</b><p>挑戦・次世代への継承</p></div>
+    </div>
   </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>14</b></div>
 </div>
 
 <div class="slide">
   <div class="no">03<span>デザインコンセプト</span></div>
-  <h2>デザインの3つの原則</h2>
-  <p class="lead">コンセプトキーワード「職人・技術／責任感／誠実」を、見た目のルールに置き換えると次の3つになります。</p>
+  <h2>3つの要素とデザインでの表現</h2>
+  <p class="lead">「技術 × 仲間 × 進化」の3つを、見た目のルールに置き換えると次のようになります。</p>
   <table class="mx">
-    <tr><th style="width:170px;">原則</th><th>やること</th><th>避けること</th><th style="width:190px;">つながるキーワード</th></tr>
-    <tr><td class="h">飾らない<small>シンプル</small></td><td>装飾や演出を足さず、写真と言葉で語る。要素を絞り、一つひとつを大きく扱う。</td><td class="ng">意味のない飾り罫・イラスト・過度なアニメーション。</td><td>職人・技術（洗練＝技術を感じさせる）</td></tr>
-    <tr><td class="h">整える<small>規則的・整然</small></td><td>グリッドに沿って揃え、正確で誠実な印象をつくる。大きな写真と余白で抑揚もつける。</td><td class="ng">要素がランダムに散らばる配置。逆に、単調すぎる均等割り。</td><td>誠実・責任感（きちんとしている会社）</td></tr>
-    <tr><td class="h">大きく見せる<small>人・現場</small></td><td>現場で働く人と車両の写真を大きく、ありのままに使う。人の表情と手元が見える写真を選ぶ。</td><td class="ng">人が写らない写真ばかりの構成。CG・未来的なイメージ写真。</td><td>職人・技術／歴史 × 新化（人がつないできた85年）</td></tr>
+    <tr><th style="width:190px;">要素</th><th>デザインでの表現</th><th>避けること</th></tr>
+    <tr><td class="h">技術<small>歴史・誠実・責任</small></td><td>グリッドに沿った整然とした構成と、シンプルで洗練された見せ方で、正確さと誠実さを伝える。車両・設備・手元など、技術のディテールを大きく見せる。青をベースにした落ち着いた配色。</td><td class="ng">装飾の多い構成。要素がランダムに散らばる配置。</td></tr>
+    <tr><td class="h">仲間<small>人・風土の良さ</small></td><td>現場で働く人の表情と、仲間と働く姿が見える写真を大きく使う。風通しの良さが伝わる、自然でありのままのカットを選ぶ。</td><td class="ng">人が写らない写真ばかりの構成。作り込みすぎたイメージ写真。</td></tr>
+    <tr><td class="h">進化<small>挑戦・次世代への継承</small></td><td>KEEP DRIVINGの大胆な英字タイポグラフィと大きな写真で、前へ進む勢いを出す。若手や新しい取り組み（ROAD TO 100th）を目立つ位置で発信する。</td><td class="ng">ポップ・デジタル寄りの表現。CG・未来的なイメージ。</td></tr>
   </table>
-  <div class="concl"><b>補足：</b>写真は11月の撮影（6拠点・2日間）で揃えます。ビジュアルデザインの段階では、撮影前の仮写真で構成し、撮影後に差し替えます。</div>
+  <div class="concl"><b>補足：</b>写真は11月の撮影（6拠点・2日間）で揃えます。ビジュアルデザインの段階では撮影前の仮写真で構成し、撮影後に差し替えます。</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>15</b></div>
 </div>
 
@@ -470,8 +480,8 @@ ul.plain li strong{font-weight:700;}
 <div class="slide">
   <div class="no">05<span>ムードボード</span></div>
   <h2>ムードボード</h2>
-  <p class="lead">方向性の近い参考サイト4件と、取り入れたい点（○）・避けたい点（×）です。サイトの見た目をそのまま真似るのではなく、要素ごとに参考にします。</p>
-  <div class="mb"><div class="card"><img src="assets/proposal/ref01.jpg" alt=""><div class="bd"><div class="t">参考01｜ダークトーン×光のKV</div><div class="u">TriOrb（URL未記載）</div><div class="g">シンプルで洗練されている</div><div class="g">大きな画像で大胆さを感じる</div><div class="g">規則性があり、正確・誠実の印象</div><div class="b">KVが未来館を強く感じる</div><div class="b">人が感じられない</div></div></div><div class="card"><img src="assets/proposal/ref02.jpg" alt=""><div class="bd"><div class="t">参考02｜貝印 関孫六 要</div><div class="u">kai-group.com/global/design/sekimagoroku-kaname/</div><div class="g">シンプルで洗練＝技術／誠実が表現され、新しさも感じる</div><div class="g">青ベースの表現（コーポレートカラーが青）</div></div></div><div class="card"><img src="assets/proposal/ref03.jpg" alt=""><div class="bd"><div class="t">参考03｜ニシザキ工芸</div><div class="u">tosou.nishizaki.co.jp</div><div class="g">シンプルで、洗練＝技術を感じる</div><div class="g">人が見える</div><div class="b">遊びや新しさの要素がほとんどない</div><div class="b">余白が大きくランダムな配置</div></div></div><div class="card"><img src="assets/proposal/ref04.jpg" alt=""><div class="bd"><div class="t">参考04｜KUMARIVA</div><div class="u">kumariva.com</div><div class="g">シンプルだが、新しさや遊び心を感じる</div><div class="g">人が見える</div><div class="b">ポップに寄っている</div><div class="b">デジタル寄りの印象</div></div></div></div>
+  <p class="lead">方向性の近い参考サイト4件と、取り入れたい点（○）・避けたい点（×）です。サイトの見た目をそのまま真似るのではなく、要素ごとに参考にします。画像・URLから各サイトを開けます。</p>
+  <div class="mb"><div class="card"><a href="https://triorb.co.jp" target="_blank" rel="noopener"><img src="assets/proposal/ref01.jpg" alt=""></a><div class="bd"><div class="t">参考01｜ダークトーン×光のKV</div><a class="u" href="https://triorb.co.jp" target="_blank" rel="noopener">triorb.co.jp</a><div class="g">シンプルで洗練されている</div><div class="g">大きな画像で大胆さを感じる</div><div class="g">規則性があり、正確・誠実の印象</div><div class="b">KVが未来館を強く感じる</div><div class="b">人が感じられない</div></div></div><div class="card"><a href="https://www.kai-group.com/global/design/sekimagoroku-kaname/" target="_blank" rel="noopener"><img src="assets/proposal/ref02.jpg" alt=""></a><div class="bd"><div class="t">参考02｜貝印 関孫六 要</div><a class="u" href="https://www.kai-group.com/global/design/sekimagoroku-kaname/" target="_blank" rel="noopener">www.kai-group.com/global/design/sekimagoroku-kaname/</a><div class="g">シンプルで洗練＝技術／誠実が表現され、新しさも感じる</div><div class="g">青ベースの表現（コーポレートカラーが青）</div></div></div><div class="card"><a href="https://tosou.nishizaki.co.jp" target="_blank" rel="noopener"><img src="assets/proposal/ref03.jpg" alt=""></a><div class="bd"><div class="t">参考03｜ニシザキ工芸</div><a class="u" href="https://tosou.nishizaki.co.jp" target="_blank" rel="noopener">tosou.nishizaki.co.jp</a><div class="g">シンプルで、洗練＝技術を感じる</div><div class="g">人が見える</div><div class="b">遊びや新しさの要素がほとんどない</div><div class="b">余白が大きくランダムな配置</div></div></div><div class="card"><a href="https://kumariva.com" target="_blank" rel="noopener"><img src="assets/proposal/ref04.jpg" alt=""></a><div class="bd"><div class="t">参考04｜KUMARIVA</div><a class="u" href="https://kumariva.com" target="_blank" rel="noopener">kumariva.com</a><div class="g">シンプルだが、新しさや遊び心を感じる</div><div class="g">人が見える</div><div class="b">ポップに寄っている</div><div class="b">デジタル寄りの印象</div></div></div></div>
   <div class="concl" style="bottom:56px;"><b>共通して取り入れたいこと：</b>シンプルで洗練された構成／人が見える写真／青をベースにした色づかい　<b>避けたいこと：</b>ポップ・デジタル寄り・人が感じられない表現</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>18</b></div>
 </div>
@@ -479,7 +489,7 @@ ul.plain li strong{font-weight:700;}
 <div class="slide">
   <div class="no">06<span>サイトマップ</span></div>
   <h2>コーポレートサイトの構成（サイトマップ）</h2>
-  <p class="lead">「歴史 × 新化」を、企業情報・事業紹介・組織風土の3本柱と、継続発信の2企画（ROAD TO 100th／CHIYODA WAY）で伝える構成です。採用サイトは別サイトとして設計します。</p>
+  <p class="lead">「85年の軌跡を、次世代につなぐ。」を、企業情報・事業紹介・組織風土の3本柱と、継続発信の2企画（ROAD TO 100th／CHIYODA WAY）で伝える構成です。採用サイトは別サイトとして設計します。</p>
   <div class="sm">
     <div class="root">トップページ<small>INDEX</small></div>
     <div class="cols">
@@ -523,11 +533,11 @@ ul.plain li strong{font-weight:700;}
     <div class="th"><img src="assets/proposal/wf-recruit.jpg" alt=""><div class="cap">採用｜採用トップ</div></div>
     <div class="links">
       <div class="lbl">閲覧リンク</div>
-      <a href="https://unouinc.github.io/chiyoda/corporate/index-wf.html">コーポレートサイト WF<small>https://unouinc.github.io/chiyoda/corporate/index-wf.html</small></a>
-      <a href="https://unouinc.github.io/chiyoda/corporate/00_sitemap-wf.html">コーポレートサイト サイトマップ<small>https://unouinc.github.io/chiyoda/corporate/00_sitemap-wf.html</small></a>
-      <a href="https://unouinc.github.io/chiyoda/recruit/index-wf.html">採用サイト WF<small>https://unouinc.github.io/chiyoda/recruit/index-wf.html</small></a>
-      <a href="https://unouinc.github.io/chiyoda/recruit/00_sitemap-recruit-wf.html">採用サイト サイトマップ<small>https://unouinc.github.io/chiyoda/recruit/00_sitemap-recruit-wf.html</small></a>
-      <a href="https://unouinc.github.io/chiyoda/">資料一覧（トップ）<small>https://unouinc.github.io/chiyoda/</small></a>
+      <a target="_blank" rel="noopener" href="https://unouinc.github.io/chiyoda/corporate/index-wf.html">コーポレートサイト WF<small>https://unouinc.github.io/chiyoda/corporate/index-wf.html</small></a>
+      <a target="_blank" rel="noopener" href="https://unouinc.github.io/chiyoda/corporate/00_sitemap-wf.html">コーポレートサイト サイトマップ<small>https://unouinc.github.io/chiyoda/corporate/00_sitemap-wf.html</small></a>
+      <a target="_blank" rel="noopener" href="https://unouinc.github.io/chiyoda/recruit/index-wf.html">採用サイト WF<small>https://unouinc.github.io/chiyoda/recruit/index-wf.html</small></a>
+      <a target="_blank" rel="noopener" href="https://unouinc.github.io/chiyoda/recruit/00_sitemap-recruit-wf.html">採用サイト サイトマップ<small>https://unouinc.github.io/chiyoda/recruit/00_sitemap-recruit-wf.html</small></a>
+      <a target="_blank" rel="noopener" href="https://unouinc.github.io/chiyoda/">資料一覧（トップ）<small>https://unouinc.github.io/chiyoda/</small></a>
     </div>
   </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>21</b></div>
@@ -536,29 +546,29 @@ ul.plain li strong{font-weight:700;}
 <div class="slide">
   <div class="no">07<span>ワイヤーフレーム</span></div>
   <h2>トップページの設計ポイント</h2>
-  <p class="lead">広報コンセプト「歴史 × 新化」に沿って、トップページの各セクションが担う役割を分けています。</p>
+  <p class="lead">広報コンセプト「85年の軌跡を、次世代につなぐ。」に沿って、トップページの各セクションが担う役割を分けています。</p>
   <div class="tp">
     <div class="stack">
       <div class="sec kv"><b>KV：KEEP DRIVING</b><span>PHOTO / VIDEO</span></div>
-      <div class="sec hl"><b>ROAD TO 100th</b><span>新化</span></div>
-      <div class="sec"><b>About Us（つなぐ。）</b><span>歴史</span></div>
-      <div class="sec"><b>Business（技術）</b><span>歴史</span></div>
-      <div class="sec hl"><b>CHIYODA WAY</b><span>新化</span></div>
-      <div class="sec"><b>Culture（組織風土）</b><span>歴史</span></div>
-      <div class="sec"><b>Clients（取引先）</b><span>歴史</span></div>
+      <div class="sec hl"><b>ROAD TO 100th</b><span>次世代</span></div>
+      <div class="sec"><b>About Us（つなぐ。）</b><span>軌跡</span></div>
+      <div class="sec"><b>Business（技術）</b><span>軌跡</span></div>
+      <div class="sec hl"><b>CHIYODA WAY</b><span>次世代</span></div>
+      <div class="sec"><b>Culture（組織風土）</b><span>軌跡</span></div>
+      <div class="sec"><b>Clients（取引先）</b><span>軌跡</span></div>
       <div class="sec"><b>Recruit / Contact</b><span>CTA</span></div>
       <div class="sec"><b>車両スライダー</b><span>PHOTO</span></div>
     </div>
     <div class="pcol">
       <div class="grp">
-        <div class="gh"><b>歴史</b><span>信頼の根拠</span></div>
+        <div class="gh"><b>85年の軌跡</b><span>信頼の根拠</span></div>
         <div class="it"><b>技術</b><span>製鉄所構内という特殊な現場で培ってきた、他ができない運搬・処理。事業紹介で具体的に見せる。</span></div>
         <div class="it"><b>組織風土</b><span>責任・誠実を核にした、風通しの良い現場。安全と技術の伝承を支える土台として、独立したセクションとナビに置く。</span></div>
         <div class="it"><b>取引先</b><span>製鉄・エネルギー・食品など、日本のものづくりを担う企業との継続取引をロゴで示す。</span></div>
         <div class="it"><b>85年の歴史</b><span>「つなぐ。」のコピーと、創業からの歩みを全面写真の上に置く。図式・数値は置かない。</span></div>
       </div>
       <div class="grp">
-        <div class="gh"><b>新化</b><span>選ばれる理由</span></div>
+        <div class="gh"><b>次世代につなぐ</b><span>選ばれる理由</span></div>
         <div class="it"><b>ROAD TO 100th</b><span>ミッション・ビジョンを内包し、その実現に向けていま始めていること（採用・制度・イベント）を継続発信する。</span></div>
         <div class="it"><b>CHIYODA WAY</b><span>熟練者のこだわりをありのままに記事化。技術者だけでなく配車係など現場を支える人も含め、85年をつくってきた一人ひとりを主役にする。</span></div>
       </div>
