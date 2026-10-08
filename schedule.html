@@ -22,6 +22,8 @@ h1{font-size:30px;font-weight:700;letter-spacing:.04em}
 .legend{position:absolute;left:52px;bottom:40px;display:flex;gap:40px;font-size:12px;align-items:center}
 .legend i{display:inline-block;width:40px;height:12px;background:var(--navy2);vertical-align:middle;margin-right:8px;border-radius:2px}
 .legend i.c{background:var(--blue)}
+.fd{position:absolute;height:19px;background:#E8833A;color:#fff;border-radius:3px;font-size:10.5px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.legend b.fd2{display:inline-block;background:#E8833A;color:#fff;font-size:10.5px;padding:2px 8px;border-radius:3px;margin-right:8px}
 .foot{position:absolute;right:52px;bottom:22px;font-size:10px;color:#9aa3ad}
 .note{position:absolute;left:52px;bottom:18px;font-size:11px;color:#4B5563}
 </style></head><body>
@@ -29,7 +31,7 @@ h1{font-size:30px;font-weight:700;letter-spacing:.04em}
   <h1>スケジュール</h1>
   <p class="lead">本プロジェクトのスケジュールは以下記載の内容を想定（リリース目標：11月末）。10月8日時点の更新版。デザインは3回に分けて順次進めます。</p>
   <div class="gantt" id="g"></div>
-  <div class="legend"><span><i></i>unouタスク</span><span><i class="c"></i>千代田興業様タスク（FB・検収）</span><span>✓①〜⑨ … タッチポイント（MTG）</span></div>
+  <div class="legend"><span><i></i>unouタスク</span><span><i class="c"></i>千代田興業様タスク（FB・検収）</span><span>✓①〜⑨ … タッチポイント（MTG）</span><span><b class="fd2">初稿</b>デザイン初稿の提出</span></div>
   <div class="note">第一弾：トップ・企業情報・ニュース・お問い合わせ・プライバシーポリシー ／ 第二弾：事業紹介・沿革・組織風土・安全品質 ／ 第三弾：採用情報・採用サイト</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中</div>
 </div>
@@ -43,10 +45,10 @@ const rows=[
  ["","ブランド/デザインコンセプト定義",[[1,4]],[[3,3,"✓③"],[5,5,"✓④"]]],
  ["デザイン","WF作成（10/8・10/16・10/23 FIX）",[[5,11]],[[8,8,"✓⑤"]]],
  ["","WFフィードバック",[[9,11,"c"]],[]],
- ["","第一弾 デザイン（11/6 FIX）",[[9,13]],[[10,10,"✓⑥"]]],
- ["","第二弾 デザイン（11/13 FIX）",[[12,14]],[]],
- ["","第三弾 デザイン（11/20 FIX）",[[13,15]],[[14,14,"✓⑧"]]],
- ["","デザインフィードバック",[[10,15,"c"]],[]],
+ ["","第一弾 デザイン（初稿 10/16・FIX 11/6）",[[9,13]],[],[10]],
+ ["","第二弾 デザイン（初稿 11/2・FIX 11/13）",[[12,14]],[],[13]],
+ ["","第三弾 デザイン（初稿 11/11・FIX 11/20）",[[13,15]],[],[14]],
+ ["","デザインフィードバック",[[10,15,"c"]],[[10,10,"✓⑥"],[14,14,"✓⑧"]]],
  ["","撮影（11月1〜2週・2日間）→ 反映",[[13,14]],[[13,13,"✓⑦"]]],
  ["開発","第一弾 コーディング・CMS構築（11/2〜）",[[13,15]],[]],
  ["","第二弾 コーディング（11/9〜）",[[14,16]],[]],
@@ -69,6 +71,7 @@ const X0=52+244, W=48.8, Y0=50, H=25;
 rows.forEach((r,i)=>{
  r[2].forEach(([s,e,c])=>{const b=document.createElement('div');b.className='bar'+(c?' c':'');b.style.left=(X0+s*W+2)+'px';b.style.width=((e-s+1)*W-4)+'px';b.style.top=(Y0+i*H+4)+'px';g.appendChild(b);});
  r[3].forEach(([s,e,t])=>{const b=document.createElement('div');b.className='tp';b.textContent=t;b.style.left=(X0+s*W+3)+'px';b.style.width=(W-6)+'px';b.style.top=(Y0+i*H+3)+'px';g.appendChild(b);});
+ (r[4]||[]).forEach(w=>{const b=document.createElement('div');b.className='fd';b.textContent='初稿';b.style.left=(X0+w*W+3)+'px';b.style.width=(W-6)+'px';b.style.top=(Y0+i*H+3)+'px';g.appendChild(b);});
 });
 
 const fit=()=>{const sl=document.querySelector('.slide');const sc=Math.min(1,(window.innerWidth-48)/1280);sl.style.transformOrigin='top left';sl.style.transform=`scale(${sc})`;sl.style.marginLeft=Math.max(0,(window.innerWidth-48-1280*sc)/2)+'px';document.body.style.height=(720*sc+48)+'px';};
