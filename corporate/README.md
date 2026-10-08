@@ -30,7 +30,8 @@
 | 17 | news-detail-wf.html | 1440 | 05-02 ニュース詳細 |
 | 18 | recruit-wf.html | 1440 | 06-01 採用情報 |
 | 19 | contact-wf.html | 1440 | 07-01 お問い合わせ |
-| — | privacy / sitemap-page / parking-site | 1440 | 仮ページ（準備中）※取込不要 |
+| 20 | privacy-wf.html | 1440 | 06-03 プライバシーポリシー |
+| — | parking-site | 1440 | 仮ページ（準備中）※取込不要 |
 
 Figmaページ名：`Wireframe_0904`／Sectionはサイトマップの第1階層ごと（01 トップ／02 企業情報／03 事業紹介／04 組織風土／05 ニュース／06 採用／07 お問い合わせ／00 資料）
 
