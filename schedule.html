@@ -31,7 +31,7 @@ h1{font-size:30px;font-weight:700;letter-spacing:.04em}
   <h1>スケジュール</h1>
   <p class="lead">本プロジェクトのスケジュールは以下記載の内容を想定（リリース目標：11月末）。10月15日時点の更新版。</p>
   <div class="gantt" id="g"></div>
-  <div class="legend"><span><i></i>unouタスク</span><span><i class="c"></i>千代田興業様タスク（FB・検収）</span><span>✓①〜⑨ … タッチポイント（MTG）</span><span><b class="fd2">初稿</b>デザイン初稿の提出</span></div>
+  <div class="legend"><span><i></i>unouタスク</span><span><i class="c"></i>千代田興業様タスク（FB・検収）</span><span>✓①〜⑨ … タッチポイント（MTG）</span><span><b class="fd2">提出</b>ご提案・デザイン初稿の提出</span></div>
   <div class="foot">unou inc.｜千代田興業株式会社御中</div>
 </div>
 <script>
@@ -42,6 +42,7 @@ const rows=[
  ["","経営層インタビュー（MVV策定）",[[1,3]],[[1,1,"✓②"]]],
  ["","ページの役割/目的定義・共通導線整理",[[1,4]],[]],
  ["","ブランド/デザインコンセプト定義",[[1,4]],[[3,3,"✓③"],[5,5,"✓④"]]],
+ ["","MVV最終案のご提案（10/22）",[[9,11]],[],[[11,"提案"]]],
  ["デザイン","WF作成（10/8・10/16・10/23 FIX）",[[5,11]],[[8,8,"✓⑤"]]],
  ["","WFフィードバック",[[9,11,"c"]],[]],
  ["","デザイン制作（トップ初稿 11月1週）",[[9,15]],[],[13]],
@@ -66,7 +67,7 @@ const X0=52+244, W=48.8, Y0=50, H=25;
 rows.forEach((r,i)=>{
  r[2].forEach(([s,e,c])=>{const b=document.createElement('div');b.className='bar'+(c?' c':'');b.style.left=(X0+s*W+2)+'px';b.style.width=((e-s+1)*W-4)+'px';b.style.top=(Y0+i*H+4)+'px';g.appendChild(b);});
  r[3].forEach(([s,e,t])=>{const b=document.createElement('div');b.className='tp';b.textContent=t;b.style.left=(X0+s*W+3)+'px';b.style.width=(W-6)+'px';b.style.top=(Y0+i*H+3)+'px';g.appendChild(b);});
- (r[4]||[]).forEach(w=>{const b=document.createElement('div');b.className='fd';b.textContent='初稿';b.style.left=(X0+w*W+3)+'px';b.style.width=(W-6)+'px';b.style.top=(Y0+i*H+3)+'px';g.appendChild(b);});
+ (r[4]||[]).forEach(x=>{const [w,t]=Array.isArray(x)?x:[x,'初稿'];const b=document.createElement('div');b.className='fd';b.textContent=t;b.style.left=(X0+w*W+3)+'px';b.style.width=(W-6)+'px';b.style.top=(Y0+i*H+3)+'px';g.appendChild(b);});
 });
 
 const fit=()=>{const sl=document.querySelector('.slide');const sc=Math.min(1,(window.innerWidth-48)/1280);sl.style.transformOrigin='top left';sl.style.transform=`scale(${sc})`;sl.style.marginLeft=Math.max(0,(window.innerWidth-48-1280*sc)/2)+'px';document.body.style.height=(720*sc+48)+'px';};
