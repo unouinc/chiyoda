@@ -262,17 +262,25 @@ ul.plain li strong{font-weight:700;}
 .hq li{font-size:12.5px;line-height:1.6;padding:7px 0 7px 14px;border-bottom:1px solid var(--line);position:relative;}
 .hq li:last-child{border-bottom:none;}
 .hq li i{position:absolute;left:0;top:15px;width:5px;height:5px;background:var(--navy2);border-radius:50%;}
+.th{display:grid;grid-template-columns:1fr 34px 1.15fr 34px 1fr;align-items:stretch;margin-top:22px;}
+.th .bx{border:1px solid var(--line);padding:20px 20px 16px;background:#fff;position:relative;}
+.th .bx.on{border:1.5px solid var(--navy2);}
+.th .ar{display:flex;align-items:center;justify-content:center;}
+.th .ph{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.12em;color:var(--gray);}
+.th h3{font-size:17px;font-weight:700;color:var(--navy2);margin:4px 0 4px;line-height:1.45;}
+.th .ds{font-size:11.5px;color:var(--gray);line-height:1.6;margin-bottom:12px;min-height:37px;}
+.th .lb{font-size:11px;color:var(--gray);letter-spacing:.08em;margin:10px 0 6px;}
+.th .chips2{display:flex;flex-wrap:wrap;gap:6px;}
+.th .chips2 span{font-size:12px;padding:5px 10px;border:1px solid var(--line);background:var(--card);line-height:1.3;}
+.th .chips2.keep span{background:#fff;border-color:var(--navy2);color:var(--navy2);}
+.th .it{border:1px solid var(--line);padding:9px 12px;margin-bottom:7px;}
+.th .it b{display:block;font-size:13px;line-height:1.5;}
+.th .it small{font-size:11px;color:var(--gray);}
+.th .badge{position:absolute;top:-11px;right:16px;background:var(--navy2);color:#fff;font-size:10.5px;font-weight:700;padding:3px 10px;letter-spacing:.06em;}
+.th .map{margin-top:10px;background:var(--card);padding:9px 12px;font-size:11.5px;line-height:1.7;}
 </style>
 </head>
 <body>
-
-<div class="slide">
-  <div class="no">10/15<span>本日のヒアリング</span></div>
-  <h2>本日のヒアリング事項</h2>
-  <p class="lead">サイトの事業紹介・組織風土・働く環境のページと、撮影する場面を具体化するために、以下の3点をお伺いします。</p>
-  <div class="hq"><div><div class="hn">01</div><h3>事業内容・仕事内容</h3><div class="to">反映先：事業紹介（5事業）／採用サイト「仕事を知る」／撮影シーン</div><ul><li><i></i>各事業で扱うもの・使う車両・現場の規模</li><li><i></i>1日の流れ（出社・点呼・作業・帰庫まで）</li><li><i></i>職種ごとの役割と、仕事のやりがい・難しさ</li><li><i></i>お客様から評価されている点、他社との違い</li><li><i></i>撮影で見せたい作業の場面</li></ul></div><div><div class="hn">02</div><h3>現場で共通して<br>行なっている組織施策</h3><div class="to">反映先：組織風土／安全・品質への取り組み／撮影シーン</div><ul><li><i></i>朝礼・KY活動・点呼など、毎日の決まりごと</li><li><i></i>安全の取り組み（無事故表彰・ヒヤリハットの共有など）</li><li><i></i>新人教育・OJTの進め方</li><li><i></i>社内イベント・表彰・声をかけ合う場</li><li><i></i>拠点をまたいで共通していること</li></ul></div><div><div class="hn">03</div><h3>制度・待遇</h3><div class="to">反映先：採用サイト「働く環境・制度」／募集要項</div><ul><li><i></i>給与体系・各種手当</li><li><i></i>勤務時間・シフト・休日・残業</li><li><i></i>資格取得支援（費用負担・対象の資格）</li><li><i></i>福利厚生（社宅・寮・各種補助など）</li><li><i></i>評価・昇給とキャリアの道筋</li></ul></div></div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>01</b></div>
-</div>
 
 <div class="slide navy cover">
   <div class="eyebrow">CHIYODA KOGYO — CORPORATE SITE RENEWAL</div>
@@ -301,6 +309,32 @@ ul.plain li strong{font-weight:700;}
     <div class="r"><div class="n">08</div><b>撮影計画</b><span>2日間で6拠点を回る撮影の段取りと、事前確認事項</span></div>
   </div>
   <div class="concl"><b>本日ご確認いただきたいこと：</b>03〜05の「見た目の方向性」です。ここが定まれば、10月中にビジュアルデザインを進めます。</div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>01</b></div>
+</div>
+
+<div class="slide">
+  <div class="no">01<span>MVV</span></div>
+  <h2>現状と今後のテーマ</h2>
+  <p class="lead">今回のMVVは、現状を起点に、直近5〜10年で実現すべきことのために定義します。その先は、次の世代が自らの言葉で再定義していく前提で設計します。</p>
+  <div class="th">
+    <div class="bx"><div class="ph">現在</div><h3>現状</h3><div class="ds">85年の資産は変えずに活かし、課題だけを未来の状態に転換する。</div>
+      <div class="lb">残す資産（ミッションの素材）</div><div class="chips2 keep"><span>85年の歴史</span><span>顧客からの信頼と実績</span><span>他ができない運搬・処理</span><span>やり続ける姿勢</span></div>
+      <div class="lb">変える課題</div><div class="chips2"><span>家族経営</span><span>高齢化</span><span>業務の属人化</span></div>
+    </div>
+    <div class="ar"><svg width="26" height="14" viewBox="0 0 26 14"><line x1="0" y1="7" x2="18" y2="7" stroke="#2A3A4D" stroke-width="1.5"/><polygon points="18,2 26,7 18,12" fill="#2A3A4D"/></svg></div>
+    <div class="bx on"><div class="badge">今回のMVVの範囲</div><div class="ph">5〜10年後</div><h3>10年後｜次世代への経営承継</h3><div class="ds">現経営体制のうちに、次の世代へ引き継げる状態をつくる。</div>
+      <div class="it"><b>若手の採用と、技術の伝承</b><small>が進んでいる状態</small></div>
+      <div class="it"><b>既存事業の拡大と効率化</b><small>が実現している状態</small></div>
+      <div class="chips2" style="margin-top:4px"><span>若手の採用</span><span>若手の抜擢（基準による登用）</span><span>業務の標準化＝技術の伝承</span><span>DX化</span><span>仕組みで受け継がれる経営</span></div>
+      <div class="map">課題と打ち手は1対1で対応：属人化は伝承で、高齢化は採用で、家族経営は仕組みと基準で解く</div>
+    </div>
+    <div class="ar"><svg width="26" height="14" viewBox="0 0 26 14"><line x1="0" y1="7" x2="18" y2="7" stroke="#2A3A4D" stroke-width="1.5"/><polygon points="18,2 26,7 18,12" fill="#2A3A4D"/></svg></div>
+    <div class="bx"><div class="ph">その先</div><h3>その先｜次世代が、自らの言葉でMVVを再定義する</h3>
+      <div class="it" style="margin-top:12px"><b>既存の受託事業の維持・拡大</b><small>は、引き続き重要</small></div>
+      <div class="it"><b>元請への依存の見直し</b><small>がどこかで必要になる</small></div>
+      <div class="it"><b>自社の新規事業をつくる</b><small>という論点が出てくる</small></div>
+    </div>
+  </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>02</b></div>
 </div>
 
