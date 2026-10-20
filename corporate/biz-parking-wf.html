@@ -173,6 +173,13 @@
   .prep h1{font-size:32px;}
   .prep p{font-size:14px;color:var(--gray-4);margin-top:12px;}
 
+  .proc{display:grid;grid-template-columns:repeat(3,1fr);column-gap:32px;margin-top:32px;position:relative;}
+  .proc .p-img{height:220px;}
+  .proc .p-track{height:40px;position:relative;}
+  .proc .p-dot{width:14px;height:14px;border-radius:50%;background:var(--ink);position:absolute;left:50%;top:13px;margin-left:-7px;}
+  .proc .p-line{position:absolute;left:calc(16.667% + 5px);right:calc(16.667% + 5px);top:239.5px;height:1px;background:var(--ink);}
+  .proc .p-body h3{font-size:20px;margin-top:4px;}
+  .proc .p-body p{font-size:14px;line-height:1.9;color:#333;margin-top:10px;}
 </style>
 </head>
 <body>
@@ -194,8 +201,8 @@
   <div class="grid2">
     <div>
       <h2>旅の始まりと終わりを、つなぐ。</h2>
-      <p class="lead2">羽田空港をご利用のお客様向けに、民間駐車場「エイトパーキング」を運営しています。送迎バスの運行を含め、お客様の旅の始まりと終わりを、安心してお任せいただける場所を目指しています。</p>
-      <div style="margin-top:20px;"><span class="chip">エリア：羽田</span></div>
+      <p class="lead2">羽田空港をご利用のお客様向けに、民間駐車場「エイトパーキング」を運営しています。お車をお預かりし、送迎バスで空港ターミナルまでお送りして、お帰りにはまたお迎えに上がる。製鉄所の構内で培ってきた「確実に、安全に」の姿勢を、お客様と直接向き合う仕事でも大切にしています。旅の起点と終点を、安心して預けていただける場所であること。それが、この仕事の役割です。</p>
+      <div style="margin-top:20px;"><span class="chip">エリア：羽田（浮島）</span></div><div style="margin-top:24px;"><a class="btnline" href="parking-site-wf.html" style="border-color:var(--ink);color:var(--ink);">エイトパーキング公式サイト <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h9M7 3l4 4-4 4" fill="none" stroke="#1a1a1a" stroke-width="1.5"/></svg></a></div>
     </div>
     <div class="ph" style="height:380px;">PHOTO</div>
   </div>
@@ -203,10 +210,12 @@
 <section>
   <p class="eyebrow">Service</p>
   <h2>主な業務内容</h2>
-  <div class="grid3" style="margin-top:28px;">
-    <div class="card"><div class="ph c-img" style="height:160px;">PHOTO</div><div class="c-body"><h3>業務01（ダミー）</h3><p>業務内容の説明が入ります（ダミー・2〜3行）。</p></div></div>
-    <div class="card"><div class="ph c-img" style="height:160px;">PHOTO</div><div class="c-body"><h3>業務02（ダミー）</h3><p>業務内容の説明が入ります（ダミー・2〜3行）。</p></div></div>
-    <div class="card"><div class="ph c-img" style="height:160px;">PHOTO</div><div class="c-body"><h3>業務03（ダミー）</h3><p>業務内容の説明が入ります（ダミー・2〜3行）。</p></div></div>
+  <p class="lead2" style="margin-top:12px;">お車をお預かりしてから、お返しするまで。お客様の旅に寄り添う仕事です。</p>
+  <div class="proc">
+    <div class="p-line"></div>
+    <div><div class="ph p-img">PHOTO（受付・入庫）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">01</div><h3>お預かりする</h3><p>ご到着したお客様を受付でお迎えし、お車をお預かりします。ご出発前の慌ただしい時間を、スムーズに。</p></div></div>
+    <div><div class="ph p-img">PHOTO（送迎バス・ターミナル）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">02</div><h3>お送りする</h3><p>送迎バスで羽田空港のターミナルまでお送りします。フライトの時間に合わせて、確実に。</p></div></div>
+    <div><div class="ph p-img">PHOTO（お迎え・出庫）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">03</div><h3>お迎えして、お返しする</h3><p>お帰りの便に合わせてターミナルへお迎えに上がり、お預かりしていたお車をお返しします。旅の終わりまで、安心して。</p></div></div>
   </div>
 </section>
 <section>
