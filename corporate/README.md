@@ -25,7 +25,7 @@
 | 13 | biz-waste-wf.html | 1440 | 03-04 産業廃棄物収集事業 |
 | 14 | biz-parking-wf.html | 1440 | 03-05 パーキング事業 |
 | 15 | culture-wf.html | 1440 | 04-01 組織風土 |
-| 15b | safety-wf.html | 1440 | 04-02 安全・品質への取り組み（組織風土の下層） |
+| — | _archive_safety-wf.html | 1440 | （アーカイブ）安全・品質への取り組み — 今回スコープ外。将来の追加提案用 |
 | 16 | news-wf.html | 1440 | 05-01 ニュース一覧 |
 | 17 | news-detail-wf.html | 1440 | 05-02 ニュース詳細 |
 | 18 | recruit-wf.html | 1440 | 06-01 採用情報 |
