@@ -184,6 +184,13 @@
   .proc3 .p-body h3{font-size:20px;margin-top:4px;}
   .proc3 .p-body .sub{font-size:13px;font-weight:600;color:var(--gray-4);margin-top:6px;}
   .proc3 .p-body p{font-size:14px;line-height:1.9;color:#333;margin-top:10px;}
+  .proc{display:grid;grid-template-columns:repeat(3,1fr);column-gap:32px;margin-top:32px;position:relative;}
+  .proc .p-img{height:220px;}
+  .proc .p-track{height:40px;position:relative;}
+  .proc .p-dot{width:14px;height:14px;border-radius:50%;background:var(--ink);position:absolute;left:50%;top:13px;margin-left:-7px;}
+  .proc .p-line{position:absolute;left:calc(16.667% + 5px);right:calc(16.667% + 5px);top:239.5px;height:1px;background:var(--ink);}
+  .proc .p-body h3{font-size:20px;margin-top:4px;}
+  .proc .p-body p{font-size:14px;line-height:1.9;color:#333;margin-top:10px;}
 </style>
 </head>
 <body>
@@ -204,8 +211,8 @@
   <p class="eyebrow">Overview</p>
   <div class="grid2">
     <div>
-      <h2>廃棄と再生を、つなぐ。</h2>
-      <p class="lead2">構内物流と環境整備の現場で出たものを、工場の外へ運ぶ。そのために必要な産業廃棄物収集運搬業の許可を取得し、適正に収集・運搬しています。独立した拠点を持つ事業ではなく、日々の構内の仕事と一体で動いている機能です。鉄屑・スクラップ、粉体、廃酸・廃アルカリなどの液体まで、性状に応じた専用車両で安全に運び、リサイクルにつなげています。</p>
+      <h2>捨てるものを、<br>もう一度資源へつなぐ。</h2>
+      <p class="lead2">構内物流と環境整備の現場で出たものを、工場の外へ運ぶ。そのために必要な産業廃棄物収集運搬業の許可を取得し、適正に収集・運搬しています。鉄屑・スクラップ、粉体、廃酸・廃アルカリなどの液体まで、性状に応じた専用車両で安全に運びます。運び出したものが、処理と再生を経てもう一度使われるところまで。それが、この仕事の役割です。</p>
       <div style="margin-top:20px;"><span class="chip">エリア：川崎・千葉</span></div>
     </div>
     <div class="ph" style="height:380px;">PHOTO</div>
@@ -214,10 +221,12 @@
 <section>
   <p class="eyebrow">Service</p>
   <h2>主な業務内容</h2>
-  <div class="grid3" style="margin-top:28px;">
-    <div class="card"><div class="ph c-img" style="height:160px;">PHOTO（搬出）</div><div class="c-body"><h3>構内で出たものを、工場の外へ</h3><p>構内物流や環境整備の作業で出た廃棄物を、許可のもとで工場の外へ運び出します。製鉄所の中だけでは完結しない部分を、私たちが担っています。</p></div></div>
-    <div class="card"><div class="ph c-img" style="height:160px;">PHOTO（タンク車両）</div><div class="c-body"><h3>廃酸・廃アルカリの運搬</h3><p>メッキ工程などで使われた廃酸・廃アルカリを、専用のタンク車両で処理・再生施設へ運びます。</p></div></div>
-    <div class="card"><div class="ph c-img" style="height:160px;">PHOTO（処理施設）</div><div class="c-body"><h3>適正処理とリサイクルへの受け渡し</h3><p>運び出したものは、処理施設やリサイクル施設へ引き渡します。マニフェストに基づき、最後まで責任をもって管理します。</p></div></div>
+  <p class="lead2" style="margin-top:12px;">構内で出たものを、性状ごとに分けて運び出し、再生の現場へ引き渡す仕事です。</p>
+  <div class="proc">
+    <div class="p-line"></div>
+    <div><div class="ph p-img">PHOTO（分別・集積）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">01</div><h3>分けて、集める</h3><p>構内物流や環境整備の現場で出た廃棄物を、鉄屑・粉体・廃酸などの性状ごとに分けて集めます。分け方が、その先の再生のしやすさを決めます。</p></div></div>
+    <div><div class="ph p-img">PHOTO（搬出・タンク車両）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">02</div><h3>運び出す</h3><p>産業廃棄物収集運搬業の許可のもと、性状に応じた専用車両で工場の外へ運び出します。液体はタンク車両で、固形物はダンプやコンテナで安全に。</p></div></div>
+    <div><div class="ph p-img">PHOTO（処理施設・引き渡し）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">03</div><h3>引き渡す</h3><p>処理施設・再生施設へ引き渡し、マニフェストで最後まで管理します。廃酸は再生されて工程へ、鉄は原料として製鋼へ戻ります。</p></div></div>
   </div>
 </section>
 <section>
