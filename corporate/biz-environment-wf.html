@@ -173,6 +173,17 @@
   .prep h1{font-size:32px;}
   .prep p{font-size:14px;color:var(--gray-4);margin-top:12px;}
 
+  .proc3{display:grid;grid-template-columns:repeat(3,1fr);column-gap:32px;margin-top:32px;position:relative;}
+  .proc3 .p-img{height:220px;}
+  .proc3 .p-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;height:220px;}
+  .proc3 .p-grid div{position:relative;}
+  .proc3 .p-grid span{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--gray-3);font-size:12px;font-weight:700;color:var(--ink);text-align:center;padding:5px 0;letter-spacing:.04em;}
+  .proc3 .p-track{height:40px;position:relative;}
+  .proc3 .p-dot{width:14px;height:14px;border-radius:50%;background:var(--ink);position:absolute;left:50%;top:13px;margin-left:-7px;}
+  .proc3 .p-line{position:absolute;left:calc(16.667% + 5px);right:calc(16.667% + 5px);top:239.5px;height:1px;background:var(--ink);}
+  .proc3 .p-body h3{font-size:20px;margin-top:4px;}
+  .proc3 .p-body .sub{font-size:13px;font-weight:600;color:var(--gray-4);margin-top:6px;}
+  .proc3 .p-body p{font-size:14px;line-height:1.9;color:#333;margin-top:10px;}
 </style>
 </head>
 <body>
@@ -219,8 +230,13 @@
 <section style="background:var(--gray-1);">
   <p class="eyebrow">Connected To</p>
   <h2>この仕事が、つながっている先</h2>
-  <p class="lead2">私たちが整えているのは、製鉄・発電・まちのインフラ。止まると困る設備を、止めないための仕事です。</p>
-  <div class="grid3" style="margin-top:28px;"><div class="card"><div class="ph c-img" style="height:150px;">PHOTO（製鉄所）</div><div class="c-body"><h3>鉄をつくる設備</h3><p>コークス炉が本来の性能を保つことで、製鉄所の操業が続きます。清掃とメンテナンスは、鉄づくりの土台を支える仕事です。</p></div></div><div class="card"><div class="ph c-img" style="height:150px;">PHOTO（発電所）</div><div class="c-body"><h3>電気をつくる設備</h3><p>海水フィルターの除去や建物の清掃は、発電所が安定して動き続けるために欠かせません。暮らしの電気を、裏側から支えています。</p></div></div><div class="card"><div class="ph c-img" style="height:150px;">PHOTO（まち・駅前）</div><div class="c-body"><h3>まちのインフラ</h3><p>道路や駅前広場、下水の清掃は、川崎のまちで暮らす人の毎日に直接つながっています。</p></div></div></div>
+  <p class="lead2">私たちが整えている設備は、鉄・電気・まちをつくり、暮らしの中で形になります。</p>
+  <div class="proc3">
+    <div class="p-line"></div>
+    <div><div class="ph p-img">PHOTO（設備・清掃）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">01</div><h3>整える</h3><div class="sub">コークス炉・発電所・まち</div><p>製鉄所のコークス炉、発電所の建物と取水設備、川崎の道路や下水を清掃・メンテナンスします。</p></div></div>
+    <div><div class="ph p-img">PHOTO（操業・発電）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">02</div><h3>動き続ける</h3><div class="sub">止まらない操業と発電</div><p>設備が本来の性能で動き続けることで、鉄づくりも発電も止まらずに続きます。</p></div></div>
+    <div><div class="p-grid"><div class="ph"><span>自動車・建物</span></div><div class="ph"><span>家庭の電気</span></div><div class="ph"><span>駅前・道路</span></div><div class="ph"><span>下水・水路</span></div></div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">03</div><h3>暮らしになる</h3><div class="sub">鉄・電気・まちとして、毎日の中へ</div><p>自動車・建物／家庭の電気／駅前・道路／下水・水路。私たちの仕事は、誰もが知る製品につながっています。</p></div></div>
+  </div>
 </section>
 <section>
   <p class="eyebrow">Other Business</p>

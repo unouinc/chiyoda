@@ -173,6 +173,17 @@
   .prep h1{font-size:32px;}
   .prep p{font-size:14px;color:var(--gray-4);margin-top:12px;}
 
+  .proc3{display:grid;grid-template-columns:repeat(3,1fr);column-gap:32px;margin-top:32px;position:relative;}
+  .proc3 .p-img{height:220px;}
+  .proc3 .p-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;height:220px;}
+  .proc3 .p-grid div{position:relative;}
+  .proc3 .p-grid span{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--gray-3);font-size:12px;font-weight:700;color:var(--ink);text-align:center;padding:5px 0;letter-spacing:.04em;}
+  .proc3 .p-track{height:40px;position:relative;}
+  .proc3 .p-dot{width:14px;height:14px;border-radius:50%;background:var(--ink);position:absolute;left:50%;top:13px;margin-left:-7px;}
+  .proc3 .p-line{position:absolute;left:calc(16.667% + 5px);right:calc(16.667% + 5px);top:239.5px;height:1px;background:var(--ink);}
+  .proc3 .p-body h3{font-size:20px;margin-top:4px;}
+  .proc3 .p-body .sub{font-size:13px;font-weight:600;color:var(--gray-4);margin-top:6px;}
+  .proc3 .p-body p{font-size:14px;line-height:1.9;color:#333;margin-top:10px;}
 </style>
 </head>
 <body>
@@ -219,8 +230,13 @@
 <section style="background:var(--gray-1);">
   <p class="eyebrow">Connected To</p>
   <h2>この仕事が、つながっている先</h2>
-  <p class="lead2">運び出したものは、捨てて終わりではなく、処理と再生を経て次の資源になります。</p>
-  <div class="grid3" style="margin-top:28px;"><div class="card"><div class="ph c-img" style="height:150px;">PHOTO（製鉄・循環）</div><div class="c-body"><h3>製鉄所のリサイクルの循環</h3><p>構内で回収したスクラップや鉄粉は、もう一度鉄になります。工場の外へ運ぶ必要があるものだけを、許可のもとで運び出しています。</p></div></div><div class="card"><div class="ph c-img" style="height:150px;">PHOTO（再生施設）</div><div class="c-body"><h3>再生施設へ</h3><p>廃酸や廃アルカリは、再生施設で処理され、再び使われます。回収から輸送までを一貫して担うことで、環境への負荷を減らしています。</p></div></div><div class="card"><div class="ph c-img" style="height:150px;">PHOTO（構内・現場）</div><div class="c-body"><h3>構内物流・環境整備と一体で</h3><p>産業廃棄物の収集運搬は、構内物流と環境整備の仕事の中に組み込まれています。現場で出たものを、現場を知る私たちが運びます。</p></div></div></div>
+  <p class="lead2">運び出したものは、処理と再生を経て、もう一度資源になり、製品に戻ります。</p>
+  <div class="proc3">
+    <div class="p-line"></div>
+    <div><div class="ph p-img">PHOTO（搬出・タンク車両）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">01</div><h3>運び出す</h3><div class="sub">構内で出た廃棄物</div><p>構内物流・環境整備の現場で出た廃酸・廃アルカリ、スクラップを、許可のもとで工場の外へ運びます。</p></div></div>
+    <div><div class="ph p-img">PHOTO（再生施設）</div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">02</div><h3>再生される</h3><div class="sub">処理施設・再生施設で</div><p>廃酸は再生されて工場の工程へ戻り、鉄は原料として製鋼の工程へ戻ります。</p></div></div>
+    <div><div class="p-grid"><div class="ph"><span>メッキ鋼板</span></div><div class="ph"><span>自動車</span></div><div class="ph"><span>家電</span></div><div class="ph"><span>建材</span></div></div><div class="p-track"><div class="p-dot"></div></div><div class="p-body"><div class="c-en">03</div><h3>製品に戻る</h3><div class="sub">資源として、もう一度暮らしの中へ</div><p>メッキ鋼板／自動車／家電／建材。私たちの仕事は、誰もが知る製品につながっています。</p></div></div>
+  </div>
 </section>
 <section>
   <p class="eyebrow">Other Business</p>
