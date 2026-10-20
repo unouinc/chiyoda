@@ -28,7 +28,7 @@
 | — | _archive_safety-wf.html | 1440 | （アーカイブ）安全・品質への取り組み — 今回スコープ外。将来の追加提案用 |
 | 16 | news-wf.html | 1440 | 05-01 ニュース一覧 |
 | 17 | news-detail-wf.html | 1440 | 05-02 ニュース詳細 |
-| 18 | recruit-wf.html | 1440 | 06-01 採用情報 |
+| — | _archive_recruit-wf.html | 1440 | （アーカイブ）採用情報 — 廃止。採用情報のリンクは採用サイトトップへ直接遷移 |
 | 19 | contact-wf.html | 1440 | 07-01 お問い合わせ |
 | 20 | privacy-wf.html | 1440 | 06-03 プライバシーポリシー |
 | — | parking-site | 1440 | 仮ページ（準備中）※取込不要 |
