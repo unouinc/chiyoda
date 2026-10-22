@@ -348,7 +348,19 @@ ul.plain li strong{font-weight:700;}
 </style><style>
 .vals4 .jk{font-size:22px;font-weight:700;color:var(--navy2);letter-spacing:.08em;margin-bottom:10px;}
 .vals4 .tg{display:inline-block;font-size:10.5px;letter-spacing:.1em;color:var(--gray);border:1px solid var(--line);padding:2px 8px;margin-bottom:12px;}
-</style></head>
+</style><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+@media (max-width:1300px){
+  body{padding:12px 0;}
+  .slide{transform-origin:top left;margin:0 auto 12px;}
+}
+</style>
+<script>
+(function(){function fit(){var w=document.documentElement.clientWidth;if(w>=1300){document.querySelectorAll('.slide').forEach(function(s){s.style.transform='';s.style.marginBottom='';s.style.marginLeft='';});return;}
+var k=(w-16)/1280;document.querySelectorAll('.slide').forEach(function(s){s.style.transform='scale('+k+')';s.style.marginLeft='8px';s.style.marginBottom=(-720*(1-k)+12)+'px';});}
+window.addEventListener('resize',fit);document.addEventListener('DOMContentLoaded',fit);})();
+</script>
+</head>
 <body>
 <div class="slide navy cover">
   <div class="eyebrow">CHIYODA KOGYO — MISSION / VISION</div>
