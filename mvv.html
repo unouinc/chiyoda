@@ -314,12 +314,29 @@ ul.plain li strong{font-weight:700;}
 .cmp th,.cmp td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
 .cmp th{background:var(--card);font-size:11.5px;letter-spacing:.06em;}
 .cmp td.h{font-weight:700;white-space:nowrap;}
+</style><style>
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;}
+.vals>div{border:1px solid var(--line);padding:26px 24px;min-height:300px;}
+.vals .k{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.2em;color:var(--gray);margin-bottom:14px;}
+.vals h3{font-size:26px;font-weight:700;color:var(--navy2);letter-spacing:.06em;margin-bottom:16px;}
+.vals p{font-size:13.5px;line-height:1.9;color:var(--sec);}
+.vals .ax{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:11.5px;color:var(--gray);}
+.vals .ax b{color:var(--navy2);font-weight:700;margin-right:8px;}
+.vblack{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 84px;gap:44px;}
+.vblack .row{display:grid;grid-template-columns:360px 1fr;gap:40px;align-items:baseline;}
+.vblack .row .t{font-size:40px;font-weight:700;color:#fff;letter-spacing:.08em;}
+.vblack .row .d{font-size:14px;color:#c9d3df;line-height:1.9;letter-spacing:.03em;}
+.layers .layer{padding:11px 24px;margin-bottom:8px;}
+.tri{width:100%;border-collapse:collapse;margin-top:26px;font-size:12.5px;line-height:1.7;}
+.tri th,.tri td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top;}
+.tri th{background:var(--card);font-size:11.5px;letter-spacing:.06em;font-weight:700;}
+.tri td.h{font-weight:700;color:var(--navy2);white-space:nowrap;font-size:14px;}
 </style></head>
 <body>
 <div class="slide navy cover">
   <div class="eyebrow">CHIYODA KOGYO — MISSION / VISION</div>
   <h1>ミッション・ビジョンのご提案</h1>
-  <div class="sub">創業85年の千代田興業が、次の100年に向けて掲げる言葉。ミッションの推し案と対案、ビジョンの候補をご提案します。</div>
+  <div class="sub">創業85年の千代田興業が、次の100年に向けて掲げる言葉。ミッションの推し案と対案、ビジョンの候補、バリューの内容案をご提案します。</div>
   <div class="meta"><span>千代田興業株式会社御中</span><span>unou株式会社｜2026.10.22</span></div>
 </div>
 
@@ -331,9 +348,9 @@ ul.plain li strong{font-weight:700;}
     <div class="layer"><div class="tag">ミッション<small>存在意義</small></div><div><b>創業から変わらず、次の100年も変わらないもの。</b>何のために、何をする会社か。<div class="sub">サイト：企業情報 ＞ ミッション・ビジョン・バリュー</div></div><div class="st on">本日 最終案</div></div>
     <div class="layer"><div class="tag">ビジョン<small>目指す姿</small></div><div><b>より先の未来に向けた、普遍性の高い到達点。</b>時代が変わっても目指し続ける場所。<div class="sub">サイト：企業情報 ＞ ミッション・ビジョン・バリュー</div></div><div class="st on">本日 提案</div></div>
     <div class="layer"><div class="tag">スローガン<small>創業100年に向けて</small></div><div><b>創業100年に向けて、全員で掲げる合言葉。</b>期間を区切った旗印として、社内外に発信する。<div class="sub">サイト：トップページ ROAD TO 100th のセクション／企業情報</div></div><div class="st">確定済</div></div>
-    <div class="layer b"><div class="tag">バリュー<small>行動規範</small></div><div><b>日々の行動の拠りどころ。</b>既存の経営理念は、ここに発展的に統合する（置き換えではない）。<div class="sub">確定後にサイトへ反映</div></div><div class="st">策定中</div></div>
+    <div class="layer b"><div class="tag">バリュー<small>行動規範</small></div><div><b>日々の行動の拠りどころ。</b>既存の経営理念は、ここに発展的に統合する（置き換えではない）。<div class="sub">確定後にサイトへ反映</div></div><div class="st on">本日 内容案</div></div>
   </div>
-  <div class="concl"><b>本日ご提案するもの：</b>ミッションの推し案と対案5つ、、ビジョンの候補（4つの系統）。スローガンは確定済み、バリューは策定中です。</div>
+  <div class="concl"><b>本日ご提案するもの：</b>ミッションの推し案と対案4つ、ビジョンの候補（4つの系統）。スローガンは確定済み。バリューは内容案（言葉は最終調整）をご提案します。</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>01</b></div>
 </div>
 
@@ -557,17 +574,50 @@ ul.plain li strong{font-weight:700;}
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>25</b></div>
 </div>
 
+<div class="slide">
+  <div class="no">03<span>バリュー</span></div>
+  <h2>バリューの考え方</h2>
+  <p class="lead">バリューは日々の行動規範。同時に、千代田興業の組織戦略であり、事業戦略でもあります。ミッション・サイトの核である「つなぐ」を3つの行動に分け、安全と技術を仲間につないでいく流れで整理しました。</p>
+  <div class="vals">
+    <div><div class="k">VALUE 01</div><h3>安全をつなぐ。</h3><p>当たり前のことを、当たり前に、毎日やり切る。その安全の積み重ねが、プロフェッショナルである。</p><div class="ax"><b>自分の仕事</b>守り</div></div><div><div class="k">VALUE 02</div><h3>技術をつなぐ。</h3><p>先人から受け継いだ技術を、仲間に伝える。個人の技で終わらせず、組織で闘える力にする。</p><div class="ax"><b>先人から仲間へ</b>縦</div></div><div><div class="k">VALUE 03</div><h3>仲間につなぐ。</h3><p>自分の責任範囲の、一つ先を考えて動く。次の人、次の工程が仕事をしやすいように渡す。その一つ先が、自分と会社を成長させる。</p><div class="ax"><b>次の人・次の工程へ</b>横・攻め</div></div>
+  </div>
+  <div class="concl"><b>3つの関係：</b>自分の仕事を安全にやり切り（守り）、技術を先人から仲間へ渡し（縦）、次の人・次の工程の一つ先まで考えて動く（横・攻め）。当たり前を全員で揃え、チームで支え、一つ先で伸びる。</div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>26</b></div>
+</div>
+
+<div class="slide black">
+  <div class="no">03<span>バリュー</span></div>
+  <h2>バリュー</h2>
+  <div class="vblack">
+    <div class="row"><div class="t">安全をつなぐ。</div><div class="d">当たり前のことを、当たり前に、毎日やり切る。その安全の積み重ねが、プロフェッショナルである。</div></div><div class="row"><div class="t">技術をつなぐ。</div><div class="d">先人から受け継いだ技術を、仲間に伝える。個人の技で終わらせず、組織で闘える力にする。</div></div><div class="row"><div class="t">仲間につなぐ。</div><div class="d">自分の責任範囲の、一つ先を考えて動く。次の人、次の工程が仕事をしやすいように渡す。その一つ先が、自分と会社を成長させる。</div></div>
+  </div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>27</b></div>
+</div>
+
+<div class="slide">
+  <div class="no">03<span>バリュー</span></div>
+  <h2>行動規範・組織戦略・事業戦略としてのバリュー</h2>
+  <p class="lead">3つのバリューは、現場の行動であると同時に、いま進めている組織づくりと、千代田興業が選ばれ続ける理由につながっています。</p>
+  <table class="tri">
+    <tr><th style="width:150px">バリュー</th><th>行動規範として</th><th>組織戦略として</th><th>事業戦略として</th></tr>
+    <tr><td class="h">安全をつなぐ。</td><td>約束した時間に、決められた手順で、確実に運ぶ。異常があれば止めて報告する。慣れで省略しない。</td><td>「当たり前」の中身を、個人の経験則から会社の基準に揃える。標準化・技術伝承・評価制度の土台。</td><td>製鉄所・発電所の構内で「止めない」ことが商品。当たり前を60年以上続けてきたことが、頼まれ続ける理由。</td></tr>
+    <tr><td class="h">技術をつなぐ。</td><td>知っていることを教える。教わったことを次に渡す。ヒヤリハットや日報を隠さず共有する。</td><td>一人で完結する仕事は、技術も判断も個人に溜まる。共有する習慣が、技術伝承と若手の早期戦力化を生む。</td><td>一人の穴をチームで埋められることが、お客様にとっての「止まらない」保証になる。安定供給力＝組織の力。</td></tr>
+    <tr><td class="h">仲間につなぐ。</td><td>次の人・次の工程がやりやすいように渡す。設備の異変に気づいたら報告する。「自分の担当ではない」で止まらない。</td><td>役職や血縁ではなく、「自分の範囲を越えて考える」行動が評価・登用の軸になる。等級制度の上位に求める行動そのもの。</td><td>千代田の付加価値は「運ぶ」ではなく「現場を知っている」こと。一つ先の気づきと提案が、替えのきかない理由と新しい仕事を生む。</td></tr>
+  </table>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>28</b></div>
+</div>
+
 <div class="slide black">
   <div class="no">01<span>MVV</span></div>
   <h2>創業100年に向けたスローガン</h2>
   <div class="vision">100年目の千代田は、<br>全員の手でつくる。</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>26</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>29</b></div>
 </div>
 
 
 
 <div class="slide">
-  <div class="no">03<span>参考</span></div>
+  <div class="no">04<span>参考</span></div>
   <h2>同業・インフラ企業のMVV</h2>
   <p class="lead">製鉄所構内の同業と、インフラ企業の理念を比較しました。「支える」「つなぐ」は業界の定番、「現場の誇り」「毎日」「当たり前」を自社の言葉として掲げている会社はありません。</p>
   <table class="cmp">
@@ -583,7 +633,7 @@ ul.plain li strong{font-weight:700;}
     <tr><td class="h">東京電力HD</td><td>ミッション＋ビジョン＋バリュー</td><td>エネルギーの未来を切り拓く／バリュー筆頭「安全最優先」</td><td>切り拓く</td></tr>
     <tr><td class="h">JR東日本</td><td>グループ理念＋コンセプトワード</td><td>安心と感動を、未来へつなぐ。</td><td>つなぐ</td></tr>
   </table>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>27</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>30</b></div>
 </div>
 </body>
 </html>
