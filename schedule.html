@@ -8,7 +8,7 @@ html{width:100%}body{background:#e9ebee;font-family:"Noto Sans JP",sans-serif;co
 .slide{width:1280px;height:720px;background:#fff;margin:0 auto;position:relative;padding:48px 52px}
 h1{font-size:30px;font-weight:700;letter-spacing:.04em}
 .lead{font-size:13.5px;color:var(--gray);margin-top:12px;letter-spacing:.03em}
-.gantt{position:relative;margin-top:20px;display:grid;grid-template-columns:52px 244px repeat(18,48.8px);grid-auto-rows:25px;font-size:11.5px}
+.gantt{position:relative;margin-top:20px;display:grid;grid-template-columns:52px 244px repeat(22,40px);grid-auto-rows:25px;font-size:11.5px}
 .gantt>div{border-bottom:1px solid var(--line);display:flex;align-items:center}
 .mh{grid-row:1;background:var(--navy2);color:#fff;justify-content:center;font-weight:700;font-size:13px;border-right:1px solid #fff}
 .wk{grid-row:2;background:var(--card);justify-content:center;font-size:9.5px;color:#4B5563;border-right:1px solid var(--line)}
@@ -29,29 +29,30 @@ h1{font-size:30px;font-weight:700;letter-spacing:.04em}
 </style></head><body>
 <div class="slide">
   <h1>スケジュール</h1>
-  <p class="lead">本プロジェクトのスケジュールは以下記載の内容を想定（リリース目標：11月末）。10月15日時点の更新版。</p>
+  <p class="lead">本プロジェクトのスケジュールは以下記載の内容を想定。撮影日程（12/14〜18）の確定に合わせた、11月5日時点の更新版。</p>
   <div class="gantt" id="g"></div>
   <div class="legend"><span><i></i>unouタスク</span><span><i class="c"></i>千代田興業様タスク（FB・検収）</span><span>✓①〜⑨ … タッチポイント（MTG）</span><span><b class="fd2">提出</b>ご提案・デザイン初稿の提出</span></div>
   <div class="foot">unou inc.｜千代田興業株式会社御中</div>
 </div>
 <script>
-const months=[["8月",5],["9月",4],["10月",4],["11月",5]];
-const weeks=["3日週","10日週","17日週","24日週","31日週","7日週","14日週","21日週","28日週","5日週","12日週","19日週","26日週","2日週","9日週","16日週","23日週","30日週"];
+const months=[["8月",5],["9月",4],["10月",4],["11月",5],["12月",4]];
+const weeks=["3日週","10日週","17日週","24日週","31日週","7日週","14日週","21日週","28日週","5日週","12日週","19日週","26日週","2日週","9日週","16日週","23日週","30日週","7日週","14日週","21日週","28日週"];
 const rows=[
  ["要件定義","Kick Off",[],[[0,0,"✓①"]]],
  ["","経営層インタビュー（MVV策定）",[[1,3]],[[1,1,"✓②"]]],
  ["","ページの役割/目的定義・共通導線整理",[[1,4]],[]],
  ["","ブランド/デザインコンセプト定義",[[1,4]],[[3,3,"✓③"],[5,5,"✓④"]]],
- ["","MVV最終案のご提案（10/22）",[[9,11]],[],[[11,"提案"]]],
- ["デザイン","WF作成（10/8・10/16・10/23 FIX）",[[5,11]],[[8,8,"✓⑤"]]],
- ["","WFフィードバック",[[9,11,"c"]],[]],
- ["","デザイン制作（トップ初稿 11月1週）",[[9,15]],[],[13]],
- ["","デザインFB → 11/20前後 FIX",[[13,15,"c"]],[[13,13,"✓⑥"],[15,15,"✓⑧"]]],
- ["","撮影（11月1〜2週・2日間）→ 反映",[[13,14]],[[13,13,"✓⑦"]]],
- ["開発","コーディング・CMS構築（完成順に並行）",[[14,17]],[]],
- ["","CMSマニュアル作成（11月3〜4週）",[[15,16]],[]],
- ["","テスト・検収（11/24〜27）",[[16,16,"c"]],[[16,16,"✓⑨"]]],
- ["","デプロイ・リリース（11月末）",[[17,17]],[]],
+ ["","MVVのご提案（10/22）→ 最終化（11月）",[[9,14]],[],[[11,"提案"]]],
+ ["デザイン","WF作成・FIX",[[5,11]],[[8,8,"✓⑤"]]],
+ ["","WF改善（デザイン初稿まで）",[[12,14]],[]],
+ ["","デザイン制作（トップ初稿 11/12）",[[11,15]],[],[[14,"初稿"]]],
+ ["","デザインFB → FIX",[[14,17,"c"]],[[14,14,"✓⑥"],[17,17,"✓⑧"]]],
+ ["撮影","下見（10/29）・撮影対象の決定・許可申請",[[12,13]],[[12,12,"✓⑦"]]],
+ ["","撮影（12/14〜18）→ 写真反映",[[19,20]],[]],
+ ["開発","コーディング・CMS構築（完成順に並行）",[[16,20]],[]],
+ ["","CMSマニュアル作成",[[18,19]],[]],
+ ["","テスト・検収",[[20,20,"c"]],[[20,20,"✓⑨"]]],
+ ["","デプロイ・リリース（日程は調整中）",[[21,21]],[]],
 ];
 const g=document.getElementById('g');
 let html='<div style="grid-row:1/3;border:none"></div><div style="grid-row:1/3;border:none"></div>';
@@ -61,9 +62,9 @@ weeks.forEach((w,i)=>{html+=`<div class="wk" style="grid-column:${i+3}">${w}</di
 const catRows={};rows.forEach((r,i)=>{if(r[0]){catRows[r[0]]=[i];}else{const k=Object.keys(catRows).pop();catRows[k].push(i);}});
 Object.entries(catRows).forEach(([k,v])=>{html+=`<div class="cat" style="grid-column:1;grid-row:${v[0]+3}/${v[v.length-1]+4}">${k}</div>`;});
 rows.forEach((r,i)=>{html+=`<div class="lb" style="grid-column:2;grid-row:${i+3}">${r[1]}</div>`;
- for(let c=0;c<18;c++){const mb=[4,8,12].includes(c);html+=`<div class="cell${mb?' mb':''}" style="grid-column:${c+3};grid-row:${i+3}"></div>`;}});
+ for(let c=0;c<22;c++){const mb=[4,8,12,17].includes(c);html+=`<div class="cell${mb?' mb':''}" style="grid-column:${c+3};grid-row:${i+3}"></div>`;}});
 g.innerHTML=html;
-const X0=52+244, W=48.8, Y0=50, H=25;
+const X0=52+244, W=40, Y0=50, H=25;
 rows.forEach((r,i)=>{
  r[2].forEach(([s,e,c])=>{const b=document.createElement('div');b.className='bar'+(c?' c':'');b.style.left=(X0+s*W+2)+'px';b.style.width=((e-s+1)*W-4)+'px';b.style.top=(Y0+i*H+4)+'px';g.appendChild(b);});
  r[3].forEach(([s,e,t])=>{const b=document.createElement('div');b.className='tp';b.textContent=t;b.style.left=(X0+s*W+3)+'px';b.style.width=(W-6)+'px';b.style.top=(Y0+i*H+3)+'px';g.appendChild(b);});
