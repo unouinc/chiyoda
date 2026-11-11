@@ -300,16 +300,21 @@ ul.plain li strong{font-weight:700;}
 .pv-blk .row .d{font-size:14px;color:#c9d3df;line-height:1.9;}
 </style><style>
 .cs-wrap{display:grid;grid-template-columns:470px 1fr;gap:36px;margin-top:26px}
-.cs-berg{position:relative;height:470px}
+.cs-berg{position:relative}
 .cs-surf{border:1px solid var(--line);padding:16px 20px;text-align:center}
 .cs-surf .cs-k{font-size:11px;letter-spacing:.14em;color:var(--gray);font-weight:700}
 .cs-surf .cs-t{font-size:20px;font-weight:700;margin-top:6px}
 .cs-water{display:flex;align-items:center;gap:10px;margin:14px 0;font-size:11px;color:var(--gray);letter-spacing:.1em}
 .cs-water:before,.cs-water:after{content:"";flex:1;border-top:1px dashed #9aa3ad}
-.cs-deep{background:var(--navy2);color:#fff;padding:20px 22px 18px;height:340px;position:relative}
+.cs-deep{background:var(--navy2);color:#fff;padding:16px 22px 12px;height:244px;position:relative}
+.cs-base{margin-top:8px;border:1.5px solid var(--navy2);background:var(--card);padding:10px 18px;}
+.cs-base .cs-k{font-size:11px;letter-spacing:.14em;color:var(--navy2);font-weight:700}
+.cs-base .cs-t{font-size:16px;font-weight:700;color:var(--navy2);margin-top:2px}
+.cs-base small{display:block;font-size:11px;color:var(--gray);margin-top:2px;line-height:1.6}
+.cs-note{font-size:12.5px;color:var(--navy2);font-weight:700;border-top:1px solid var(--line);padding-top:10px;line-height:1.7}
 .cs-deep .cs-k{font-size:11px;letter-spacing:.14em;color:#c9d3df;font-weight:700}
 .cs-deep .cs-t{font-size:19px;font-weight:700;margin-top:6px;line-height:1.6}
-.cs-cyc{position:absolute;left:0;right:0;bottom:16px;display:flex;justify-content:center}
+.cs-cyc{position:absolute;left:0;right:0;bottom:4px;display:flex;justify-content:center}
 .cs-obs{display:flex;flex-direction:column;gap:12px}
 .cs-obs .cs-h{font-size:12px;letter-spacing:.14em;color:var(--gray);font-weight:700}
 .cs-row{display:grid;grid-template-columns:210px 34px 1fr;align-items:stretch;border:1px solid var(--line)}
@@ -318,6 +323,18 @@ ul.plain li strong{font-weight:700;}
 .cs-row .cs-ar{display:flex;align-items:center;justify-content:center}
 .cs-row .cs-mean{padding:14px 16px 14px 4px;font-size:13px;line-height:1.7}
 .cs-row .cs-mean b{display:block;font-size:14.5px;color:var(--navy2)}
+</style><style>
+.mc2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.mc2>div{border:1px solid var(--line);padding:22px 26px}
+.mc2 .tag{font-size:12px;letter-spacing:.14em;color:var(--gray);font-weight:700}
+.mc2 .st{font-size:18px;font-weight:700;line-height:1.75;margin:10px 0 14px;padding:14px 18px;background:var(--card)}
+.mc2 .st em{font-style:normal;color:var(--navy2);border-bottom:2px solid var(--navy2)}
+.mc2 b{display:block;font-size:12.5px;color:var(--navy2);margin-top:8px}
+.mc2 ul{list-style:none}
+.mc2 li{font-size:12.5px;line-height:1.75;padding-left:12px;position:relative}
+.mc2 li i{position:absolute;left:0;top:10px;width:4px;height:4px;border-radius:50%;background:var(--navy2)}
+.mcp{margin-top:16px;font-size:12.5px;line-height:1.7;border-top:1px solid var(--line);padding-top:10px}
+.mcp b{color:var(--navy2)}
 </style></head>
 <body>
 
@@ -382,18 +399,18 @@ ul.plain li strong{font-weight:700;}
   <h2>MVVの位置づけ</h2>
   <p class="lead">サイトで伝えるすべての言葉は、MVVから出発しています。変わらない「ミッション・ビジョン」、創業100年までの「スローガン」、日々の「バリュー」の4つに役割を分けています。</p>
   <div class="layers l4">
-    <div class="layer"><div class="tag">ミッション<small>存在意義</small></div><div><b>創業から変わらず、次の100年も変わらないもの。</b>何のために、何をする会社か。<div class="sub">サイト：企業情報 ＞ ミッション・ビジョン・バリュー</div></div><div class="st on">決定</div></div>
+    <div class="layer"><div class="tag">ミッション<small>存在意義</small></div><div><b>創業から変わらず、次の100年も変わらないもの。</b>何のために、何をする会社か。<div class="sub">サイト：企業情報 ＞ ミッション・ビジョン・バリュー</div></div><div class="st on">最終確認</div></div>
     <div class="layer"><div class="tag">ビジョン<small>目指す姿</small></div><div><b>より先の未来に向けた、普遍性の高い到達点。</b>時代が変わっても目指し続ける場所。<div class="sub">サイト：企業情報 ＞ ミッション・ビジョン・バリュー</div></div><div class="st on">決定</div></div>
     <div class="layer"><div class="tag">スローガン<small>創業100年に向けて</small></div><div><b>創業100年に向けて、全員で掲げる合言葉。</b>期間を区切った旗印として、社内外に発信する。<div class="sub">サイト：トップページ ROAD TO 100th のセクション／企業情報</div></div><div class="st">確定済</div></div>
     <div class="layer b"><div class="tag">バリュー<small>行動規範</small></div><div><b>日々の行動の拠りどころ。</b>既存の経営理念は、ここに発展的に統合する（置き換えではない）。<div class="sub">サイト：企業情報 ＞ ミッション・ビジョン・バリュー</div></div><div class="st on">内容案</div></div>
   </div>
-  <div class="concl"><b>現在の状況：</b>ミッション・ビジョンは決定、バリューは案です。スローガンは確定済みです。</div>
+  <div class="concl"><b>現在の状況：</b>ビジョンは決定、ミッションは「日本の」の有無を最終確認、バリューは案です。スローガンは確定済みです。</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>03</b></div>
 </div>
 
 <div class="slide black">
   <div class="no">01<span>MVV</span></div>
-  <h2>ミッション（決定）</h2>
+  <h2>ミッション 案A｜「日本の」あり</h2>
   <div class="mission">
     <div class="mline"><span class="tg">主体</span><div class="tx">私たちは</div></div>
     <div class="mline"><span class="tg">手段</span><div class="tx">現場で磨いてきた技術と想いで</div></div>
@@ -402,27 +419,54 @@ ul.plain li strong{font-weight:700;}
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>04</b></div>
 </div>
 
-<div class="slide black">
+<div class="slide">
   <div class="no">01<span>MVV</span></div>
-  <h2>ビジョン（決定）</h2>
-  <div class="vision">現場が誇りを持ち<br>家族が安心できる<br>会社であり続ける</div>
+  <h2>ミッション｜「日本の」あり・なしの比較</h2>
+  <p class="lead">言葉の骨格は決まっています。最後に「日本の」を入れるかどうかを、2つを並べて決めたいと考えています。</p>
+  <div class="mc2">
+    <div><div class="tag">案A｜「日本の」あり</div><div class="st">私たちは<br>現場で磨いてきた技術と想いで<br>産業と暮らしをつなぎ<br><em>日本の</em>当たり前を支え続ける</div>
+      <b>良いところ</b><ul><li><i></i>製鉄・発電など、国の基幹を支えている使命の大きさが伝わる</li><li><i></i>採用で「日本を支える仕事」と言い切れる</li><li><i></i>10/22時点の合意案のまま</li></ul>
+      <b>気になるところ</b><ul><li><i></i>スケールが大きく、言い過ぎに聞こえる人もいる</li><li><i></i>インフラ系企業でよく使われる言い回しに近い</li></ul></div>
+    <div><div class="tag">案B｜「日本の」なし</div><div class="st">私たちは<br>現場で磨いてきた技術と想いで<br>産業と暮らしをつなぎ<br>当たり前を支え続ける</div>
+      <b>良いところ</b><ul><li><i></i>「当たり前」がより際立ち、短く覚えやすい</li><li><i></i>現場の一人ひとりの手触りに近く、千代田らしい控えめさがある</li><li><i></i>「誰の当たり前か」をお客様・まち・家族へと広く受け取れる</li></ul>
+      <b>気になるところ</b><ul><li><i></i>支える対象がやや曖昧になる</li><li><i></i>社会的な使命のスケール感は弱まる</li></ul></div>
+  </div>
+  <div class="mcp"><b>決めるときの観点：</b>社員が自分の言葉として口にできるか／若手の採用で響くか／ビジョン「現場が誇りを持ち 家族が安心できる 会社であり続ける」と並べたときのバランス</div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>05</b></div>
 </div>
 
 <div class="slide black">
   <div class="no">01<span>MVV</span></div>
-  <h2>バリュー（案）</h2>
-  <div class="pv-blk">
-    <div class="row"><div class="t">安全をつなぐ。</div><div class="d">当たり前のことを、当たり前に、毎日やり切る。その安全の積み重ねが、プロフェッショナルである。</div></div><div class="row"><div class="t">技術をつなぐ。</div><div class="d">先人から受け継いだ技術を、仲間に伝える。個人の技で終わらせず、組織で闘える力にする。</div></div><div class="row"><div class="t">想いをつなぐ。</div><div class="d">自分の責任範囲の、一つ先を考えて動く。次の人、次の工程が仕事をしやすいように渡す。その一つ先が、自分と会社を成長させる。</div></div>
+  <h2>ミッション 案B｜「日本の」なし</h2>
+  <div class="mission">
+    <div class="mline"><span class="tg">主体</span><div class="tx">私たちは</div></div>
+    <div class="mline"><span class="tg">手段</span><div class="tx">現場で磨いてきた技術と想いで</div></div>
+    <div class="mline"><span class="tg">対象・意義</span><div class="tx">産業と暮らしをつなぎ<br>当たり前を支え続ける</div></div>
   </div>
   <div class="foot">unou inc.｜千代田興業株式会社御中<b>06</b></div>
 </div>
 
 <div class="slide black">
   <div class="no">01<span>MVV</span></div>
+  <h2>ビジョン（決定）</h2>
+  <div class="vision">現場が誇りを持ち<br>家族が安心できる<br>会社であり続ける</div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>07</b></div>
+</div>
+
+<div class="slide black">
+  <div class="no">01<span>MVV</span></div>
+  <h2>バリュー（案）</h2>
+  <div class="pv-blk">
+    <div class="row"><div class="t">安全をつなぐ。</div><div class="d">当たり前のことを、当たり前に、毎日やり切る。その安全の積み重ねが、プロフェッショナルである。</div></div><div class="row"><div class="t">技術をつなぐ。</div><div class="d">先人から受け継いだ技術を、仲間に伝える。一人の経験やコツで終わらせず、会社の仕組みとして残し、組織で闘える力にする。</div></div><div class="row"><div class="t">想いをつなぐ。</div><div class="d">お客様の想い、先人の想い、仲間の想いを受け止めて、次へ渡す。自分の持ち場の一つ先まで考え、次の人が気持ちよく仕事ができるようにつなぐ。その積み重ねが、信頼と成長になる。</div></div>
+  </div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>08</b></div>
+</div>
+
+<div class="slide black">
+  <div class="no">01<span>MVV</span></div>
   <h2>創業100年に向けたスローガン</h2>
   <div class="vision">100年目の千代田は、<br>全員の手でつくる。</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>07</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>09</b></div>
 </div>
 
 <div class="slide">
@@ -436,7 +480,7 @@ ul.plain li strong{font-weight:700;}
       <div class="cs-deep">
         <div class="cs-k">競争の源泉</div>
         <div class="cs-t">現場で改善し、より良くし、<br>それを標準化する姿勢</div>
-        <div class="cs-cyc"><svg width="400" height="210" viewBox="0 0 400 210">
+        <div class="cs-cyc"><svg width="262" height="138" viewBox="0 0 400 210">
           <g font-family="Noto Sans JP" font-weight="700" text-anchor="middle" fill="#1E3A5F">
             <circle cx="200" cy="40" r="36" fill="#fff"/><text x="200" y="46" font-size="15">改善する</text>
             <circle cx="320" cy="165" r="36" fill="#fff"/><text x="320" y="171" font-size="14">より良く</text>
@@ -451,6 +495,7 @@ ul.plain li strong{font-weight:700;}
           <text x="200" y="128" text-anchor="middle" font-family="Noto Sans JP" font-size="11" fill="#c9d3df">現場で回り続ける</text>
         </svg></div>
       </div>
+      <div class="cs-base"><div class="cs-k">根底にある価値観</div><div class="cs-t">社員を大切にする（社員の幸せを追求する）</div><small>人を大切にするから、現場の声が改善になり、長く働く人が技術を磨き続けられる。</small></div>
     </div>
     <div class="cs-obs">
       <div class="cs-h">視察で見たもの ｜ そこからわかること</div>
@@ -458,10 +503,11 @@ ul.plain li strong{font-weight:700;}
       <div class="cs-row"><div class="cs-see">自社の整備工場と、優秀な整備士</div><div class="cs-ar"><svg width="18" height="12" viewBox="0 0 18 12"><line x1="0" y1="6" x2="11" y2="6" stroke="#1E3A5F" stroke-width="1.5"/><polygon points="10,1 18,6 10,11" fill="#1E3A5F"/></svg></div><div class="cs-mean"><b>自分たちで直し、改善できる</b>外に頼らず、現場の困りごとを社内で解決する力。</div></div>
       <div class="cs-row"><div class="cs-see">現場に合わせたフルカスタムの車両</div><div class="cs-ar"><svg width="18" height="12" viewBox="0 0 18 12"><line x1="0" y1="6" x2="11" y2="6" stroke="#1E3A5F" stroke-width="1.5"/><polygon points="10,1 18,6 10,11" fill="#1E3A5F"/></svg></div><div class="cs-mean"><b>細かな改善を、標準にしていく</b>現場の工夫を一台ごとに積み上げ、次の車両に引き継ぐ。</div></div>
       <div class="cs-row"><div class="cs-see">現場上がりの、人当たりの良い管理者</div><div class="cs-ar"><svg width="18" height="12" viewBox="0 0 18 12"><line x1="0" y1="6" x2="11" y2="6" stroke="#1E3A5F" stroke-width="1.5"/><polygon points="10,1 18,6 10,11" fill="#1E3A5F"/></svg></div><div class="cs-mean"><b>現場を知る人が、組織を支える</b>改善の声が上に届き、仕組みに変わる風土がある。</div></div>
+      <div class="cs-note">どの強みも、社員を大切にする風土の上に成り立っています。</div>
     </div>
   </div>
 
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>08</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>10</b></div>
 </div>
 
 <div class="slide">
@@ -477,7 +523,7 @@ ul.plain li strong{font-weight:700;}
       <div class="c"><div class="lbl">継続発信</div><div class="v" style="font-size:20px;">ROAD TO 100th<br>CHIYODA WAY</div><p>次世代への取り組みと、85年の技術を支える人を、公開後も発信し続ける2つの企画。</p><div class="where">ニュース／組織風土・採用サイト</div></div>
     </div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>09</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>11</b></div>
 </div>
 
 <div class="slide black prc-black">
@@ -491,7 +537,7 @@ ul.plain li strong{font-weight:700;}
       <div class="ph">PHOTO<small>次世代につなぐ｜若手・新しい取り組み</small></div>
     </div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>10</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>12</b></div>
 </div>
 
 <div class="slide">
@@ -507,7 +553,7 @@ ul.plain li strong{font-weight:700;}
     <p>そのためには、過去に固執せず、新しい取り組みをしている会社であると認識されることが、<b>商品市場・労働市場の両方</b>で大切になります。</p>
   </div>
   <div class="concl"><b>整理：</b>「85年の軌跡」は信頼の根拠、「次世代につなぐ」取り組みは選ばれる理由。軌跡だけでは古い会社に見え、新しい取り組みだけでは根拠がない。両方を並べて発信することで、顧客にも求職者にも伝わります。</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>11</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>13</b></div>
 </div>
 
 <div class="slide black">
@@ -516,7 +562,7 @@ ul.plain li strong{font-weight:700;}
   <div class="copyhero">
     <div class="kvtag"><span class="k1">KEEP</span><span class="kl"><span>85年つないできた技術を</span><i></i><span>次の100年へ。</span></span><span class="k2">DRIVING</span></div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>12</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>14</b></div>
 </div>
 
 <div class="slide">
@@ -528,7 +574,7 @@ ul.plain li strong{font-weight:700;}
     <div class="w"><div class="k">Driving<small>現場を動かし、次へ進む</small></div><p>製鉄所構内で車両を走らせ、操業を止めずに動かし続ける。Driving には「走る」「動かす」「前へ進める」の意味が重なり、日々の現場の姿と、次の100年へ向かう姿勢を一語で伝えます。</p></div>
     <div class="w wide"><div class="k" style="font-size:18px;">なぜ英語か<small>新しさを、若手に届けるため</small></div><p>日本語で「走り続ける」と書くと、堅実だが古い会社に見えやすい。英語の短い言葉にすることで、同じ意味を新しさのあるトーンで届けられます。日本語のサブコピー「85年つないできた技術を、次の100年へ。」が意味を補い、英語が読めなくても伝わる構成です。2語だけの短い言葉なので、口に出して覚えやすく、ロゴのように扱えることも意識しています。</p></div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>13</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>15</b></div>
 </div>
 
 <div class="slide black">
@@ -538,7 +584,7 @@ ul.plain li strong{font-weight:700;}
     <div class="big">つなぐ。</div>
     <div class="sub">鉄も、食も、人々も。<br>先人の技術と想いを、次の世代へ。</div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>14</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>16</b></div>
 </div>
 
 <div class="slide">
@@ -555,7 +601,7 @@ ul.plain li strong{font-weight:700;}
     <div class="t"><div class="h">人をつなぐ｜継承</div><b>技術・先人の想い</b><p>現場の技術はマニュアルではなく人から人へ渡る。ベテランから若手へ、85年から100年へ。ビジョン「全員の手で」はここ。</p></div>
   </div>
   <div class="concl"><b>サブコピー：</b>「鉄も、食も、人々も。」で3層の対象を言い、「先人の技術と想いを、次の世代へ。」で継承の方向を示す。事業（運ぶ）と理念（受け継ぐ）を、同じ動詞で語れることが「つなぐ」を選んだ理由です。</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>15</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>17</b></div>
 </div>
 
 <div class="slide">
@@ -579,7 +625,7 @@ ul.plain li strong{font-weight:700;}
     </div>
   </div>
   <div class="concl"><b>役割分担：</b>Aが「次世代につなぐ」取り組みを、Bが「85年の軌跡（技術）」を担う。2本を並走させることで、広報コンセプト「85年の軌跡を、次世代につなぐ。」をそのまま更新し続けられます。</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>16</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>18</b></div>
 </div>
 
 <div class="slide">
@@ -613,7 +659,7 @@ ul.plain li strong{font-weight:700;}
     </div>
   </div>
 
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>17</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>19</b></div>
 </div>
 
 <div class="slide black">
@@ -627,7 +673,7 @@ ul.plain li strong{font-weight:700;}
       <div><b>進化</b><p>挑戦・次世代への継承</p></div>
     </div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>18</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>20</b></div>
 </div>
 
 <div class="slide">
@@ -641,7 +687,7 @@ ul.plain li strong{font-weight:700;}
     <tr><td class="h">進化<small>挑戦・次世代への継承</small></td><td>KEEP DRIVINGの大胆な英字タイポグラフィと大きな写真で、前へ進む勢いを出す。若手や新しい取り組み（ROAD TO 100th）を目立つ位置で発信する。</td><td class="ng">ポップ・デジタル寄りの表現。CG・未来的なイメージ。</td></tr>
   </table>
   <div class="concl"><b>補足：</b>写真は11月の撮影（6拠点・2日間）で揃えます。ビジュアルデザインの段階では撮影前の仮写真で構成し、撮影後に差し替えます。</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>19</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>21</b></div>
 </div>
 
 <div class="slide">
@@ -649,7 +695,7 @@ ul.plain li strong{font-weight:700;}
   <h2>トーンのスケール</h2>
   <p class="lead">両端に対になる言葉を置き、目指すトーンがどちらに寄るかを点で示しています。中央が中立です。</p>
   <div class="scales"><div class="scale"><div class="l">シンプル</div><svg width="560" height="40" viewBox="0 0 560 40"><line x1="10" y1="20.0" x2="550" y2="20.0" stroke="#D6DAE0" stroke-width="2"/><line x1="10.0" y1="15.0" x2="10.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="100.0" y1="15.0" x2="100.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="190.0" y1="15.0" x2="190.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="280.0" y1="11.0" x2="280.0" y2="29.0" stroke="#6B7280" stroke-width="2"/><line x1="370.0" y1="15.0" x2="370.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="460.0" y1="15.0" x2="460.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="550.0" y1="15.0" x2="550.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><circle cx="55.0" cy="20.0" r="10" fill="#1E3A5F"/></svg><div class="r">装飾的</div></div><div class="scale-note"><i></i><span>全参考サイトで「シンプルで洗練＝技術」を評価</span><i></i></div><div class="scale"><div class="l">規則的・整然</div><svg width="560" height="40" viewBox="0 0 560 40"><line x1="10" y1="20.0" x2="550" y2="20.0" stroke="#D6DAE0" stroke-width="2"/><line x1="10.0" y1="15.0" x2="10.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="100.0" y1="15.0" x2="100.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="190.0" y1="15.0" x2="190.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="280.0" y1="11.0" x2="280.0" y2="29.0" stroke="#6B7280" stroke-width="2"/><line x1="370.0" y1="15.0" x2="370.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="460.0" y1="15.0" x2="460.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="550.0" y1="15.0" x2="550.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><circle cx="190.0" cy="20.0" r="10" fill="#1E3A5F"/></svg><div class="r">自由・ランダム</div></div><div class="scale-note"><i></i><span>規則性＝正確・誠実。ただし規則的すぎない</span><i></i></div><div class="scale"><div class="l">伝統・重厚</div><svg width="560" height="40" viewBox="0 0 560 40"><line x1="10" y1="20.0" x2="550" y2="20.0" stroke="#D6DAE0" stroke-width="2"/><line x1="10.0" y1="15.0" x2="10.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="100.0" y1="15.0" x2="100.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="190.0" y1="15.0" x2="190.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="280.0" y1="11.0" x2="280.0" y2="29.0" stroke="#6B7280" stroke-width="2"/><line x1="370.0" y1="15.0" x2="370.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="460.0" y1="15.0" x2="460.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="550.0" y1="15.0" x2="550.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><circle cx="370.0" cy="20.0" r="10" fill="#1E3A5F"/></svg><div class="r">新しさ・軽やか</div></div><div class="scale-note"><i></i><span>技術の重みは保ちつつ、新しさは感じさせる</span><i></i></div><div class="scale"><div class="l">落ち着き</div><svg width="560" height="40" viewBox="0 0 560 40"><line x1="10" y1="20.0" x2="550" y2="20.0" stroke="#D6DAE0" stroke-width="2"/><line x1="10.0" y1="15.0" x2="10.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="100.0" y1="15.0" x2="100.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="190.0" y1="15.0" x2="190.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="280.0" y1="11.0" x2="280.0" y2="29.0" stroke="#6B7280" stroke-width="2"/><line x1="370.0" y1="15.0" x2="370.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="460.0" y1="15.0" x2="460.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="550.0" y1="15.0" x2="550.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><circle cx="145.0" cy="20.0" r="10" fill="#1E3A5F"/></svg><div class="r">ポップ</div></div><div class="scale-note"><i></i><span>遊び心はよいが、ポップには寄せない</span><i></i></div><div class="scale"><div class="l">デジタル・未来的</div><svg width="560" height="40" viewBox="0 0 560 40"><line x1="10" y1="20.0" x2="550" y2="20.0" stroke="#D6DAE0" stroke-width="2"/><line x1="10.0" y1="15.0" x2="10.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="100.0" y1="15.0" x2="100.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="190.0" y1="15.0" x2="190.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="280.0" y1="11.0" x2="280.0" y2="29.0" stroke="#6B7280" stroke-width="2"/><line x1="370.0" y1="15.0" x2="370.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="460.0" y1="15.0" x2="460.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><line x1="550.0" y1="15.0" x2="550.0" y2="25.0" stroke="#D6DAE0" stroke-width="2"/><circle cx="415.0" cy="20.0" r="10" fill="#1E3A5F"/></svg><div class="r">リアル・人の手</div></div><div class="scale-note"><i></i><span>人が見える写真を中心に。デジタル・未来的な表現は避ける</span><i></i></div></div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>20</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>22</b></div>
 </div>
 
 <div class="slide">
@@ -664,7 +710,7 @@ ul.plain li strong{font-weight:700;}
     <tr><td class="h">レイアウト</td><td>グリッドに沿って整然と。大きな写真と余白で抑揚をつけ、単調にしない。</td><td class="ng">要素がランダムに散らばる配置。</td></tr>
     <tr><td class="h">動き</td><td>スクロールに合わせたフェード程度の、控えめな動きに留める。</td><td class="ng">派手なアニメーションや、デジタル感の強い演出。</td></tr>
   </table>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>21</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>23</b></div>
 </div>
 
 <div class="slide">
@@ -673,7 +719,7 @@ ul.plain li strong{font-weight:700;}
   <p class="lead">方向性の近い参考サイト4件と、取り入れたい点（○）・避けたい点（×）です。サイトの見た目をそのまま真似るのではなく、要素ごとに参考にします。画像・URLから各サイトを開けます。</p>
   <div class="mb"><div class="card"><a href="https://triorb.co.jp" target="_blank" rel="noopener"><img src="assets/proposal/ref01.jpg" alt=""></a><div class="bd"><div class="t">参考01｜ダークトーン×光のKV</div><a class="u" href="https://triorb.co.jp" target="_blank" rel="noopener">triorb.co.jp</a><div class="g">シンプルで洗練されている</div><div class="g">大きな画像で大胆さを感じる</div><div class="g">規則性があり、正確・誠実の印象</div><div class="b">KVが未来感を強く感じる</div><div class="b">人が感じられない</div></div></div><div class="card"><a href="https://www.kai-group.com/global/design/sekimagoroku-kaname/" target="_blank" rel="noopener"><img src="assets/proposal/ref02.jpg" alt=""></a><div class="bd"><div class="t">参考02｜貝印 関孫六 要</div><a class="u" href="https://www.kai-group.com/global/design/sekimagoroku-kaname/" target="_blank" rel="noopener">www.kai-group.com/global/design/sekimagoroku-kaname/</a><div class="g">シンプルで洗練＝技術／誠実が表現され、新しさも感じる</div><div class="g">青ベースの表現（コーポレートカラーが青）</div></div></div><div class="card"><a href="https://tosou.nishizaki.co.jp" target="_blank" rel="noopener"><img src="assets/proposal/ref03.jpg" alt=""></a><div class="bd"><div class="t">参考03｜ニシザキ工芸</div><a class="u" href="https://tosou.nishizaki.co.jp" target="_blank" rel="noopener">tosou.nishizaki.co.jp</a><div class="g">シンプルで、洗練＝技術を感じる</div><div class="g">人が見える</div><div class="b">遊びや新しさの要素がほとんどない</div><div class="b">余白が大きくランダムな配置</div></div></div><div class="card"><a href="https://kumariva.com" target="_blank" rel="noopener"><img src="assets/proposal/ref04.jpg" alt=""></a><div class="bd"><div class="t">参考04｜KUMARIVA</div><a class="u" href="https://kumariva.com" target="_blank" rel="noopener">kumariva.com</a><div class="g">シンプルだが、新しさや遊び心を感じる</div><div class="g">人が見える</div><div class="b">ポップに寄っている</div><div class="b">デジタル寄りの印象</div></div></div></div>
   <div class="concl" style="bottom:56px;"><b>共通して取り入れたいこと：</b>シンプルで洗練された構成／人が見える写真／青をベースにした色づかい　<b>避けたいこと：</b>ポップ・デジタル寄り・人が感じられない表現</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>22</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>24</b></div>
 </div>
 
 <div class="slide">
@@ -692,7 +738,7 @@ ul.plain li strong{font-weight:700;}
     </div>
   </div>
   <div class="legend"><span><i class="k"></i>第1階層（グローバルナビ）</span><span><i></i>第2階層</span><span><i class="c"></i>CMSで社内更新</span><span><i class="e"></i>別サイト・規定ページ</span></div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>23</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>25</b></div>
 </div>
 
 <div class="slide">
@@ -710,7 +756,7 @@ ul.plain li strong{font-weight:700;}
     </div>
   </div>
   <div class="legend"><span><i class="k"></i>第1階層（グローバルナビ）</span><span><i></i>第2階層</span><span><i class="c"></i>CMSで社内更新</span><span><i class="e"></i>別サイト・外部</span></div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>24</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>26</b></div>
 </div>
 
 <div class="slide">
@@ -730,7 +776,7 @@ ul.plain li strong{font-weight:700;}
       <a target="_blank" rel="noopener" href="https://unouinc.github.io/chiyoda/">資料一覧（トップ）<small>https://unouinc.github.io/chiyoda/</small></a>
     </div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>25</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>27</b></div>
 </div>
 
 <div class="slide">
@@ -768,7 +814,7 @@ ul.plain li strong{font-weight:700;}
       </div>
     </div>
   </div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>26</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>28</b></div>
 </div>
 
 <div class="slide">
@@ -780,7 +826,7 @@ ul.plain li strong{font-weight:700;}
     <div><div class="dh">2日目<span>千葉（2拠点）</span></div><table class="ps"><tr class="mv"><td class="t">7:30</td><td>川崎を出発（アクアライン経由 約60分）</td></tr><tr class="mv"><td class="t">8:30–9:00</td><td>入構手続き・安全教育</td></tr><tr class="sh"><td class="t">9:00–11:30</td><td><b>君津営業所</b><small>構内作業、車両、現場の人物</small></td></tr><tr class="mv"><td class="t">11:30–12:30</td><td>昼食・移動（約50分）</td></tr><tr class="mv"><td class="t">12:30–13:00</td><td>入構手続き</td></tr><tr class="sh"><td class="t">13:00–15:30</td><td><b>千葉営業所</b><small>構内作業、現場の人物、採用サイト用の社員インタビュー</small></td></tr><tr class="sh"><td class="t">15:30–16:00</td><td><b>予備時間</b><small>夕方の光のカット、撮り直し</small></td></tr><tr class="mv"><td class="t">16:00</td><td>撤収（川崎へ約70分）</td></tr></table></div>
   </div>
   <div class="concl"><b>事前確認：</b>製鉄所構内（扇島・千葉・君津）の撮影許可と撮影範囲／保護具・安全教育・入構人数／各拠点の被写体のシフトと朝礼の時間／雨天時の予備日</div>
-  <div class="foot">unou inc.｜千代田興業株式会社御中<b>27</b></div>
+  <div class="foot">unou inc.｜千代田興業株式会社御中<b>29</b></div>
 </div>
 
 </body>
