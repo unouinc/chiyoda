@@ -180,6 +180,21 @@
   .proc .p-line{position:absolute;left:calc(16.667% + 5px);right:calc(16.667% + 5px);top:239.5px;height:1px;background:var(--ink);}
   .proc .p-body h3{font-size:20px;margin-top:4px;}
   .proc .p-body p{font-size:14px;line-height:1.9;color:#333;margin-top:10px;}
+
+  .vtbl{margin-top:40px;}
+  .vtbl .vh{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink);padding-bottom:10px;}
+  .vtbl .vh h3{font-size:17px;font-weight:700;}
+  .vtbl .vh span{font-size:12px;color:var(--gray-4);}
+  .vtbl .vg{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;}
+  .vtbl .vr{display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid var(--line);font-size:14px;}
+  .vtbl .vr b{font-weight:700;}
+  .vtbl .vr small{color:var(--gray-4);font-size:12px;margin-left:8px;}
+  .vtbl .vt{display:flex;justify-content:flex-end;gap:16px;padding:14px 4px 0;font-size:14px;font-weight:700;}
+  .vtbl .note{font-size:11px;color:var(--gray-4);margin-top:10px;}
+  .lic{margin-top:28px;width:100%;border-collapse:collapse;font-size:14px;}
+  .lic th,.lic td{border-bottom:1px solid var(--line);padding:14px 8px;text-align:left;}
+  .lic thead th{border-bottom:1px solid var(--ink);font-size:12px;color:var(--gray-4);font-weight:600;}
+  .lic .pdf{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);padding:6px 14px;font-size:12px;font-weight:600;}
 </style>
 </head>
 <body>
@@ -223,6 +238,7 @@
   <h2>自社車両</h2>
   <p class="lead2" style="margin-top:12px;">駐車場と空港ターミナルを結ぶ送迎バスを、自社で運行しています。</p>
   <div class="grid4" style="margin-top:28px;grid-template-columns:repeat(2,1fr);"><div class="card"><div class="ph c-img" style="height:200px;">PHOTO（送迎バス）</div><div class="c-body" style="padding:18px 20px 22px;"><h3 style="font-size:17px;">送迎バス</h3><p style="font-size:13px;margin-top:6px;">駐車場と空港ターミナルの送迎</p></div></div><div class="ph" style="height:283px;">PHOTO（駐車場全景）</div></div>
+  <div class="vtbl"><div class="vh"><h3>保有車両一覧</h3><span>◯年◯月時点</span></div><div class="vg"><div class="vr"><span>送迎バス</span><b>◯台</b></div></div><div class="vt"><span>合計</span><span>◯台</span></div><p class="note">※ 公道を走る車両と構内専用車両を含みます。</p></div>
   <div style="margin-top:20px;"><span class="chip">対応エリア：羽田</span></div>
 </section>
 <section>
