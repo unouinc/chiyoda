@@ -206,6 +206,9 @@
   .lic th,.lic td{border-bottom:1px solid var(--line);padding:14px 8px;text-align:left;}
   .lic thead th{border-bottom:1px solid var(--ink);font-size:12px;color:var(--gray-4);font-weight:600;}
   .lic .pdf{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);padding:6px 14px;font-size:12px;font-weight:600;}
+  .lic-list{display:grid;grid-template-columns:repeat(4,1fr);column-gap:48px;margin-top:28px;}
+  .lic-a{display:flex;justify-content:space-between;align-items:center;padding:14px 4px;border-bottom:1px solid var(--line);font-size:14px;text-decoration:underline;text-underline-offset:4px;}
+  .lic-a span{font-size:10px;font-weight:600;border:1px solid var(--gray-3);padding:1px 6px;text-decoration:none;color:var(--gray-4);}
 </style>
 </head>
 <body>
@@ -236,14 +239,9 @@
 <section>
   <p class="eyebrow">License</p>
   <h2>許可証一覧</h2>
-  <p class="lead2" style="margin-top:12px;">産業廃棄物収集運搬業の許可証です。都道府県ごとにPDFでご確認いただけます。</p>
-  <table class="lic"><thead><tr><th style="width:22%;">許可自治体</th><th style="width:26%;">許可の種類</th><th style="width:20%;">許可番号</th><th style="width:18%;">有効期限</th><th>許可証</th></tr></thead><tbody>
-    <tr><td>神奈川県</td><td>産業廃棄物収集運搬業</td><td>第◯◯◯◯◯◯号</td><td>20◯◯年◯月◯日</td><td><span class="pdf">PDF ↓</span></td></tr>
-    <tr><td>川崎市</td><td>産業廃棄物収集運搬業</td><td>第◯◯◯◯◯◯号</td><td>20◯◯年◯月◯日</td><td><span class="pdf">PDF ↓</span></td></tr>
-    <tr><td>千葉県</td><td>産業廃棄物収集運搬業</td><td>第◯◯◯◯◯◯号</td><td>20◯◯年◯月◯日</td><td><span class="pdf">PDF ↓</span></td></tr>
-    <tr><td>東京都</td><td>産業廃棄物収集運搬業</td><td>第◯◯◯◯◯◯号</td><td>20◯◯年◯月◯日</td><td><span class="pdf">PDF ↓</span></td></tr>
-  </tbody></table>
-  <p class="note" style="font-size:11px;color:var(--gray-4);margin-top:10px;">※ 自治体名・許可番号は仮です。行の追加・PDFの差し替えは管理画面（CMS）から行えます。</p>
+  <p class="lead2" style="margin-top:12px;">産業廃棄物収集運搬業の許可証は、以下の自治体ごとにPDFでご確認いただけます。</p>
+  <div class="lic-list"><a class="lic-a" href="#">神奈川県<span>PDF</span></a><a class="lic-a" href="#">川崎市<span>PDF</span></a><a class="lic-a" href="#">横浜市<span>PDF</span></a><a class="lic-a" href="#">千葉県<span>PDF</span></a><a class="lic-a" href="#">千葉市<span>PDF</span></a><a class="lic-a" href="#">東京都<span>PDF</span></a><a class="lic-a" href="#">埼玉県<span>PDF</span></a><a class="lic-a" href="#">茨城県<span>PDF</span></a></div>
+  <p class="note" style="font-size:11px;color:var(--gray-4);margin-top:10px;">※ 自治体名は仮です。行の追加・PDFの差し替えは管理画面（CMS）から行えます。</p>
 </section>
 <section>
   <p class="eyebrow">Service</p>
